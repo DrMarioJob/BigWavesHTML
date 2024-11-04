@@ -248,6 +248,7 @@ body {
 .header {
     min-height: 400px;
     background: url(../img/head.jpg) top center no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -307,6 +308,7 @@ img {
     min-height: 64px;
     padding: 0 15px;
     text-align: center;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -384,4 +386,103 @@ img {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.section {
+    padding: 65px 0;
+}
+
+.sec1 {
+    background: url(../img/section.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 46px;
+    display: block;
+    text-align: center;
+}
+
+.prMainIco {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.prMain {
+    max-width: 572px;
+    margin: 0 auto;
+    border: 2px solid #C5C5C5;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #2C2C2E;
+}
+
+.prMainName {
+    background: #3B3D3F;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.prMainName1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+}
+
+.prMainName1 span {
+    text-transform: uppercase;
+    font-size: clamp(16px, 10vw, 24px);
+    font-weight: 800;
+}
+
+.prMainName2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    justify-content: center;
+}
+
+.prMainName2 span {
+    font-size: clamp(16px, 10vw, 18px);
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.prMainSpRd {
+    border: 3px solid #da5a54;
+}
+
+.prMainSpGr {
+    border: 3px solid #00B0A4;
+}
+
+.prMainContT {
+    line-height: 26px;
+    background: #3B3D3F;
+    text-align: center;
+    padding: 10px;
+}
+
+.prMainStat {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+
+.prCarousel {
+    margin-top: 55px;
 }
