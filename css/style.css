@@ -272,13 +272,13 @@ img {
     text-transform: uppercase;
     text-align: center;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 25px;
 }
 
 .headerContT2 {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -301,7 +301,7 @@ img {
     outline: none;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 18px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -332,9 +332,11 @@ img {
 }
 
 .contBlock1 {
-    font-size: clamp(20px, 15vw, 18px);
+    font-size: 13px;
     padding: 10px;
-    line-height: 26px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .containerF2 {
@@ -356,6 +358,7 @@ img {
     border: 2px solid #fff;
     border-radius: 5px;
     padding: 5px 10px;
+    font-size: 13px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), inset 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
@@ -400,7 +403,7 @@ img {
 .secTitle {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 46px;
+    font-size: 36px;
     display: block;
     text-align: center;
 }
@@ -442,7 +445,7 @@ img {
 
 .prMainName1 span {
     text-transform: uppercase;
-    font-size: clamp(16px, 10vw, 24px);
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -455,7 +458,7 @@ img {
 }
 
 .prMainName2 span {
-    font-size: clamp(16px, 10vw, 18px);
+    font-size: 13px;
     border-radius: 5px;
     padding: 3px 10px;
 }
@@ -473,6 +476,7 @@ img {
     background: #3B3D3F;
     text-align: center;
     padding: 10px;
+    font-size: 14px;
 }
 
 .prMainStat {
@@ -485,4 +489,8 @@ img {
 
 .prCarousel {
     margin-top: 55px;
+}
+
+.logoB {
+    max-width: 60%;
 }
