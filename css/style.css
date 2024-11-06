@@ -595,3 +595,7 @@ img {
 .prMainVirgin .prMainName {
     justify-content: space-around;
 }
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
