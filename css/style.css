@@ -320,6 +320,11 @@ img {
     border-bottom: 5px solid #00968D;
 }
 
+.btn_dk {
+    background: #9F9FA0;
+    border-bottom: 5px solid #8A8A8B;
+}
+
 .contBlock {
     background: #3B3D3F;
 }
@@ -418,13 +423,17 @@ img {
 .prMain {
     max-width: 572px;
     margin: 0 auto;
-    border: 2px solid #C5C5C5;
+    border: 2px solid #9F9FA0;
     border-radius: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     background: #2C2C2E;
+}
+
+.prMainAwwa {
+    border: 2px solid #00B0A4;
 }
 
 .prMainName {
@@ -471,6 +480,10 @@ img {
     border: 3px solid #00B0A4;
 }
 
+.prMainSpEl {
+    border: 3px solid #FF9D00;
+}
+
 .prMainContT {
     line-height: 26px;
     background: #3B3D3F;
@@ -481,10 +494,11 @@ img {
 
 .prMainStat {
     display: flex;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     gap: 10px;
     text-align: center;
+    margin: 20px 0;
 }
 
 .prCarousel {
@@ -493,4 +507,91 @@ img {
 
 .logoB {
     max-width: 60%;
+}
+
+.prMainStat div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.prMainStat div span:nth-child(2) {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.prMainStat div span:nth-child(1) {
+    font-size: 20px;
+    color: #9C9C9C;
+}
+
+.prMain .btn {
+    width: fit-content;
+    min-width: 200px;
+    position: relative;
+    margin-bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.prMainIco div {
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.prMainIco div.active {
+    opacity: 1;
+}
+
+.prMainCont div {
+    display: none;
+}
+
+.prMainCont div.active {
+    display: block;
+}
+
+.prMainAwwa .prMainName {
+    background: #2C2C2E;
+    width: 107%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    justify-content: space-around;
+}
+
+.prMainAwwa .prMainName1 {
+    color: #00B0A4;
+}
+
+.prMainAwwa .prMainName::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #323335;
+    border-left: 22px solid transparent;
+}
+
+.prMainAwwa .prMainName::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #323335;
+    border-right: 22px solid transparent;
+}
+
+.prMainVirgin .prMainSpRd {
+    border-color: #9C9C9C;
+}
+
+.prMainVirgin .prMainName {
+    justify-content: space-around;
 }
