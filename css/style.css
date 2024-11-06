@@ -136,7 +136,7 @@ body {
     font-size: 18px;
     background: #252526;
     color: #fff;
-    /* min-height: 6000px; */
+    min-height: 6000px;
 }
 
 .mainNav {
@@ -146,6 +146,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    z-index: 999;
 }
 
 .navRight {
@@ -397,11 +402,21 @@ img {
 }
 
 .section {
-    padding: 65px 0;
+    padding: 35px 0;
 }
 
 .sec1 {
     background: url(../img/section.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.sec2 {
+    background: url(../img/calc.jpg) bottom center no-repeat;
+    background-size: cover;
+}
+
+.sec3 {
+    background: url(../img/about.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -430,6 +445,7 @@ img {
     flex-direction: column;
     gap: 5px;
     background: #2C2C2E;
+    margin-bottom: 32px;
 }
 
 .prMainAwwa {
@@ -597,5 +613,184 @@ img {
 }
 
 .owl-carousel .owl-stage-outer {
-    overflow: visible;
+    /* overflow: visible; */
+}
+
+.prSwipe {
+    width: 43px;
+    height: 45px;
+    background: url(../img/swipe.png);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    z-index: 10;
+    animation: sway 1s ease infinite;
+}
+
+.calcWr {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.calcBtn {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 177, 164, 0.99), rgba(0, 177, 164, 0.01));
+}
+
+.calcBtn2 {
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, rgba(59, 61, 63, 0.99), rgba(59, 61, 63, 0.01));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.calcBtnCl1Active .calcBtn2 {
+    background: linear-gradient(to top, rgba(0, 177, 164, 0.99), rgba(0, 177, 164, 0.01));
+}
+
+.calcBtnCl1Active .calcBtn3 {
+    box-shadow: 0 0 30px rgba(0, 177, 164, 0.99);
+}
+
+.calcBtn3 {
+    width: 215px;
+    height: 215px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: rgb(59, 61, 63);
+    margin-top: -30px;
+}
+
+.calcBtn2 span {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.btn_gr1 {
+    display: none;
+}
+
+.btn_gr1Active {
+    display: flex;
+}
+
+.aboutVFrame {
+    margin-top: 30px;
+    position: relative;
+}
+
+.aboutVFrame a {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.aboutDesc {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.aboutStat {
+    border-radius: 10px;
+    padding: 20px 10px;
+    border: 5px solid #00B0A4;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: 0 0 30px rgba(0, 177, 164, 0.7), inset 0 0 30px rgba(0, 177, 164, 0.2);
+}
+
+.aboutStatRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 21px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutStatCol {
+    font-weight: 800;
+    color: #00B0A4;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutStatColT {
+    font-size: 14px;
+}
+
+.aboutStatRowWr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutStatCol span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.aboutStatRowWr {
+    border-bottom: 2px solid #5E6062;
+    padding-bottom: 10px;
+}
+
+.aboutQo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.aboutQo img {
+    width: auto !important;
+}
+
+.aboutQo div {
+    padding: 8px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(156, 156, 156, 0.4), rgba(156, 156, 156, 0.01));
+}
+
+.aboutVideo {
+    margin-bottom: 30px;
+}
+
+.aboutVideo a {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.aboutContWr {
+    position: relative;
 }
