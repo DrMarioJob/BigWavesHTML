@@ -8,7 +8,7 @@
 	<title>Big Waves</title>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/style.css?v=0.0.2">
+	<link rel="stylesheet" href="css/style.css?v=0.0.3">
 </head>
 
 <body>
@@ -854,28 +854,23 @@
 	</script>
 	<script>
 		document.addEventListener('click', (event) => {
-			// Открытие блока при клике на represBaliRow
 			if (event.target.closest('.represBaliCol')) {
 				const targetId = event.target.closest('.represBaliCol').dataset.id;
 				const targetBlock = document.querySelector(`.represBaliBlock[data-id="${targetId}"]`);
 
-				// Закрываем все открытые блоки перед открытием нужного
 				document.querySelectorAll('.represBaliBlock').forEach(block => {
 					block.classList.remove('active');
 				});
 
-				// Открываем выбранный блок
 				if (targetBlock) {
 					targetBlock.classList.add('active');
 				}
 			}
 
-			// Закрытие блока при клике на кнопку закрытия
 			if (event.target.classList.contains('represBaliBlockCl')) {
 				event.target.closest('.represBaliBlock').classList.remove('active');
 			}
 
-			// Закрытие блока при клике вне блоков
 			if (!event.target.closest('.represBaliCol') && !event.target.closest('.represBaliBlock')) {
 				document.querySelectorAll('.represBaliBlock').forEach(block => {
 					block.classList.remove('active');
