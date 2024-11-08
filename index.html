@@ -241,7 +241,7 @@
 							<div class="prSwipe"></div>
 							<div class="calcBtn calcBtnCl1">
 								<div class="calcBtn2">
-									<div class="calcBtn3"><img src="img/awwa-c.jpg" alt="Pic"></div>
+									<div class="calcBtn3"><span>Обрати</span><img src="img/awwa-c.jpg" alt="Pic"></div>
 									<span>AWWA</span>
 								</div>
 							</div>
@@ -253,7 +253,7 @@
 							<div class="prSwipe"></div>
 							<div class="calcBtn calcBtnCl1">
 								<div class="calcBtn2">
-									<div class="calcBtn3"><img src="img/moon-c.jpg" alt="Pic"></div>
+									<div class="calcBtn3"><span>Обрати</span><img src="img/moon-c.jpg" alt="Pic"></div>
 									<span>Moonrock 2.0</span>
 								</div>
 							</div>
@@ -265,7 +265,8 @@
 							<div class="prSwipe"></div>
 							<div class="calcBtn calcBtnCl1">
 								<div class="calcBtn2">
-									<div class="calcBtn3"><img src="img/virgin-c.jpg" alt="Pic"></div>
+									<div class="calcBtn3"><span>Обрати</span><img src="img/virgin-c.jpg" alt="Pic">
+									</div>
 									<span>Virgin Beach</span>
 								</div>
 							</div>
@@ -747,6 +748,94 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="section sec6" id="sec6">
+			<div class="container">
+				<h3 class="secTitle">
+					<div class="secTitleFl">
+						<div class="secTitleFlL">
+							<div class="secTitleFl1">Основні причини</div>
+							<div class="secTitleFl2">
+								<div>
+									<span>інвестувати в</span>
+									<span>нерухомість</span>
+								</div>
+								<div class="balGr">на Балі</div>
+							</div>
+						</div>
+						<div class="secTitleFlIco"><img src="img/bali-b.png" alt="Ico"></div>
+					</div>
+				</h3>
+				<div class="owl-carousel baliInvCarousel">
+					<div class="item">
+						<!-- Slide 1 -->
+						<div class="baliInvWr">
+							<div class="prSwipe"></div>
+							<div class="baliInvPic">
+								<span class="balInvLine1"></span>
+								<span class="balInvLine2"></span>
+								<span class="balInvLine3"></span>
+								<img src="img/bal-1.png" alt="Pic">
+							</div>
+							<div class="balInvT">Орендний дохід</div>
+							<div class="balInvD">
+								Інвестуйте в нерухомість, яка забезпечує стабільний орендний дохід. Балі — топове
+								туристичне
+								направлення, і короткострокова оренда забезпечує високі прибутки протягом року.
+							</div>
+
+							<div class="baliInvPic">
+								<span class="balInvLine1"></span>
+								<span class="balInvLine2"></span>
+								<span class="balInvLine3"></span>
+								<img src="img/bal-2.png" alt="Pic">
+							</div>
+							<div class="balInvT">Вигідний перепродаж</div>
+							<div class="balInvD">
+								Придбайте нерухомість на ранній стадії розвитку або в перспективних районах і продайте
+								її через
+								кілька років з значним прибутком. Ринок нерухомості на Балі стабільно зростає, і добре
+								вибрана
+								інвестиція може принести значні капітальні прибутки при перепродажу.
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<!-- Slide 2 -->
+						<div class="baliInvWr">
+							<div class="prSwipe"></div>
+							<div class="baliInvPic">
+								<span class="balInvLine1"></span>
+								<span class="balInvLine2"></span>
+								<span class="balInvLine3"></span>
+								<a href="https://www.youtube.com/watch?v=393JkWCNW-Q" data-fancybox><img
+										src="img/bal-3.jpg" alt="Pic"></a>
+							</div>
+							<div class="balInvT">Місце для вашого особистого відпочинку</div>
+							<div class="balInvD">
+								Інвестуйте в віллу на Балі і насолоджуйтесь нею під час відпустки. Це ідеальний спосіб
+								поєднати
+								задоволення з прибутком: відпочивайте у власній віллі в райському місці і заробляйте
+								орендний
+								дохід, здаючи її в оренду туристам, коли не використовуєте. Такий підхід дозволяє
+								максимізувати
+								прибуток від вашої інвестиції, зберігаючи при цьому особисте відпочинкове місце на
+								острові.
+							</div>
+							<div class="bqLine">
+								<span class="bqLine1"></span>
+								<span class="bqLine2"></span>
+								<span class="bqLine3"></span>
+								Консультація нашого спеціаліста з будь-якої з цих інвестиційних областей
+							</div>
+							<div class="flexCenter">
+								<a href="#" class="btn btn_gr">Отримати консультацію</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<script src="js/jquery-3.7.1.min.js"></script>
@@ -823,6 +912,28 @@
 
 		$(document).ready(function () {
 			$('.howBaliCarousel').owlCarousel({
+				loop: true,
+				margin: 25,
+				nav: false,
+				autoplay: false,
+				autoplayTimeout: 5000,
+				autoplayHoverPause: false,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
+				}
+			})
+		});
+
+		$(document).ready(function () {
+			$('.baliInvCarousel').owlCarousel({
 				loop: true,
 				margin: 25,
 				nav: false,
