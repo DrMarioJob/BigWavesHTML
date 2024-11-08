@@ -84,8 +84,6 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -308,6 +306,10 @@ img {
     box-shadow: 0 0 20px rgba(0, 176, 164, 0.9), inset 0 0 10px rgba(0, 176, 164, 0.6);
 }
 
+i {
+    font-style: normal;
+}
+
 .btn {
     border-radius: 10px;
     font-weight: 800;
@@ -323,6 +325,7 @@ img {
     padding: 0 15px;
     text-align: center;
     justify-content: center;
+    font-family: "Manrope", serif !important;
 }
 
 .btn:hover {
@@ -337,6 +340,11 @@ img {
 .btn_dk {
     background: #9F9FA0;
     border-bottom: 5px solid #8A8A8B;
+}
+
+.btn_bk {
+    background: #2C2C2E;
+    border-bottom: 5px solid #202021;
 }
 
 .contBlock {
@@ -441,6 +449,11 @@ img {
 
 .sec6 {
     background: url(../img/bali-inv.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.sec7 {
+    background: url(../img/qiz.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -634,10 +647,6 @@ img {
 
 .prMainVirgin .prMainName {
     justify-content: space-around;
-}
-
-.owl-carousel .owl-stage-outer {
-    /* overflow: visible; */
 }
 
 .prSwipe {
@@ -1252,8 +1261,6 @@ img {
     padding-right: 5px;
 }
 
-.baliInvPic img {}
-
 .balInvLine1,
 .balInvLine2,
 .balInvLine3 {
@@ -1323,4 +1330,99 @@ img {
     bottom: 0;
     left: 0;
     background: linear-gradient(to right, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
+}
+
+.owl-dots {
+    display: none;
+}
+
+.sec6 {
+    padding-bottom: 0;
+}
+
+.qizWrapper {
+    margin-top: 45px;
+}
+
+.qizPic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qizPic img {
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.qizPicLine1 {
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    border: 5px solid #00B0A4;
+    display: flex;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 1;
+}
+
+.qizPicLine2 {
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: 3;
+}
+
+.qizTitle {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.qizColNum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.qizColNum span {
+    font-weight: 800;
+}
+
+.qizProgWr {
+    margin-top: 20px;
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.qizProg {
+    position: absolute;
+    height: 100%;
+    background: #00B0A4;
+}
+
+.qizForm {
+    margin-top: 20px;
+}
+
+.qizBtnWr {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.qizBtnWr .btn {
+    width: -webkit-fill-available;
 }
