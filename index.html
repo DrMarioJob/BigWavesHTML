@@ -8,7 +8,7 @@
 	<title>Big Waves</title>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/style.css?v=0.0.3">
+	<link rel="stylesheet" href="css/style.css?v=0.0.4">
 </head>
 
 <body>
@@ -856,7 +856,7 @@
 						</div>
 						<div class="qizForm">
 							<form action="index.html">
-								<div class="formGroup">
+								<div class="formGroup" id="stage1">
 									<label for="qiz1" class="formGroupLb">
 										<input type="radio" name="qizSel1" id="qiz1" checked="">
 										<span class="formGroupOw"></span>
@@ -872,6 +872,75 @@
 										<span class="formGroupOw"></span>
 										<i>Для інвестицій</i>
 									</label>
+								</div>
+
+								<!-- Modal Qiz -->
+								<div class="modalQizWr">
+									<div class="modalQiz">
+										<button class="closeModalQiz"></button>
+										<div class="qizModalT">Як з вами зв’язатися?</div>
+										<!-- <div class="modalQizPic">
+											<span class="qizPicLine1"></span>
+											<img src="img/qizForm-1.jpg" alt="Pic">
+										</div> -->
+										<div class="modalQizForm">
+											<label for="qizName">
+												Ваше ім'я*
+												<input type="text" name="qizName" id="qizName" required>
+											</label>
+											<div class="qizInpFl">
+												<label for="qizPCode">
+													Ваш телефон*
+													<select name="qizPCode" id="qizPCode">
+														<option value="+380">+380</option>
+													</select>
+												</label>
+												<label for="qizPhone">
+													<input type="text" name="qizPhone" id="qizPhone" required>
+												</label>
+											</div>
+											<label for="qizMail">
+												Ваш email
+												<input type="email" name="qizMail" id="qizMail">
+											</label>
+
+											<i>Оберіть зручний для вас месенджер</i>
+
+											<div class="formGroup formGroupQiz" id="stageForm">
+												<div class="formGroupWr">
+													<label for="formQiz1" class="formGroupLb">
+														<input type="radio" name="qizMedia" id="formQiz1" checked>
+														<span class="formGroupOw"></span>
+														<i>Telegram</i>
+													</label>
+													<label for="formQiz2" class="formGroupLb">
+														<input type="radio" name="qizMedia" id="formQiz2">
+														<span class="formGroupOw"></span>
+														<i>WhatsApp</i>
+													</label>
+												</div>
+												<div class="formGroupWr">
+													<label for="formQiz3" class="formGroupLb">
+														<input type="radio" name="qizAction" id="formQiz3" checked>
+														<span class="formGroupOw"></span>
+														<i>Передзвонити</i>
+													</label>
+													<label for="formQiz4" class="formGroupLb">
+														<input type="radio" name="qizAction" id="formQiz4">
+														<span class="formGroupOw"></span>
+														<i>Написати</i>
+													</label>
+												</div>
+											</div>
+											<div class="flexCenter">
+												<button type="submit" class="btn btn_gr">Відправити</button>
+											</div>
+											<i class="qizBtnT">
+												Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+												погоджуєтеся з нашою політикою конфіденційності.
+											</i>
+										</div>
+									</div>
 								</div>
 							</form>
 						</div>
