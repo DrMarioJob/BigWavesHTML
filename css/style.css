@@ -462,6 +462,16 @@ i {
     background-size: cover;
 }
 
+.sec9 {
+    background: url(../img/sec9.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.sec10 {
+    background: url(../img/sec10.jpg) top center no-repeat;
+    background-size: cover;
+}
+
 .secTitle {
     /* text-transform: uppercase; */
     font-weight: 400;
@@ -1499,6 +1509,7 @@ i {
     flex-direction: column;
     gap: 10px;
     font-size: 16px;
+    width: -webkit-fill-available;
 }
 
 .qizInpFl {
@@ -1597,7 +1608,7 @@ i {
     background: linear-gradient(to top, rgba(0, 177, 164, 0.8), rgba(0, 177, 164, 0.01));
 }
 
-.invInfo {
+button.invInfo {
     border: none;
     outline: none;
     border-radius: 100%;
@@ -1606,8 +1617,12 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
     background: linear-gradient(to top, rgba(0, 177, 164, 0.9), rgba(0, 177, 164, 0.4));
     box-shadow: 0 10px 20px rgba(0, 177, 164, 0.9);
+    animation: calcBtnAnim 3s ease infinite;
 }
 
 .invAllSpin {
@@ -1647,4 +1662,378 @@ i {
 
 .invCarousel img {
     width: auto !important;
+}
+
+.closeModalInv {
+    background: url(../img/close.png);
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.invModal {
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    z-index: 5;
+    border-top: 3px solid #00B0A4;
+    padding: 25px 7px 20px 7px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+.invModal.active {
+    display: flex;
+}
+
+.invModalT {
+    font-weight: 800;
+}
+
+.invModalD {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.sec9 .secTitleFl {
+    text-align: center;
+}
+
+.bTarget {
+    margin: 25px auto 0 auto;
+    width: 295px;
+    height: 109px;
+    display: block;
+    text-align: center;
+    line-height: 90px;
+    background: url(../img/b-target.png) center;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.bcWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bcRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bcTitle {
+    font-weight: 800;
+}
+
+.bcImg {
+    position: relative;
+    padding: 10px;
+}
+
+.bcImg img {
+    border-radius: 5px;
+}
+
+.bcImg1,
+.bcImg2,
+.bcImg3 {
+    position: absolute;
+}
+
+.bcImg1 {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #00B0A4;
+}
+
+.bcImg2 {
+    width: 2px;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
+}
+
+.bcImg3 {
+    width: 2px;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4,
+.sec5,
+.sec6,
+.sec7,
+.sec8,
+.sec9,
+.sec10 {
+    position: relative;
+}
+
+.sec1::before,
+.sec2::before,
+.sec3::before,
+.sec4::before,
+.sec5::before,
+.sec6::before,
+.sec7::before,
+.sec8::before,
+.sec9::before,
+.sec10::before {
+    content: '';
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
+}
+
+.sec10Pic {
+    margin-top: 25px;
+}
+
+.sec10T {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background: #202021;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fLogo img {
+    max-width: 60%;
+}
+
+.fDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.fDesc a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fWel {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.modalBody {
+    position: fixed;
+    z-index: 100;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    background: url(../img/qiz-bg.jpg) top center no-repeat;
+    background-size: cover;
+    width: -webkit-fill-available;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    animation: calcBtnAnim 2s ease infinite;
+}
+
+.modalBodyLogo img {
+    max-width: 60%;
+}
+
+.modalBodyBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modalBodyBtn .btn {
+    box-shadow: none;
+    border: none;
+    font-size: 16px;
+}
+
+.modalBodyBtn .bordrR {
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #00B0A4;
+}
+
+.modalBodyBtn .bordrL {
+    border-radius: 0 10px 10px 0;
+    background: none;
+    border: 2px solid #00B0A4;
+}
+
+.mainMdWr {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mainMdWr {
+    display: none;
+}
+
+.mainMdWrActive {
+    display: flex;
+}
+
+.closeModalBody {
+    background: url(../img/close.png);
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.defForm {
+    overflow: hidden;
+    background: url(../img/qiz-bg.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00B0A4;
+    position: fixed;
+    z-index: 110;
+    top: 60px;
+    left: 0;
+    max-width: 90%;
+}
+
+.defForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.defForm .formGroup {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.defForm .formGroup {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.defForm .formGroupWr label {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.defForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.defForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    width: -webkit-fill-available;
+}
+
+.defForm i {
+    font-size: 14px;
+}
+
+.defForm select {
+    font-weight: 800;
+}
+
+.defForm select,
+.defForm input[type="text"],
+.defForm input[type="email"] {
+    border: 2px solid #6D6D6E;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    width: -webkit-transform:;
+}
+
+.defForm input[type="text"],
+.defForm input[type="email"] {
+    padding-left: 15px;
+}
+
+.defFormTitle {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.closeAboutForm,
+.closeCalcForm,
+.closeheadForm {
+    background: url(../img/close.png);
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.aboutForm,
+.calcForm,
+.headForm {
+    display: none;
+}
+
+.aboutFormActive,
+.calcFormActive,
+.headFormActive {
+    display: flex;
 }

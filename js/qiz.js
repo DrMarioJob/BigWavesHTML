@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const qizNext = document.getElementById('qizNext');
     const qizFirst = document.getElementById('qizFirst');
     const modalQizWr = document.querySelector('.modalQizWr');
-    const qizForm = document.querySelector('form');
+    const qizForm = document.getElementById('qizFormMain');
     const formData = {
         stageAnswers: {},
         contactInfo: {}
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    qizForm.addEventListener('submit', function (event) {
+    qizForm.addEventListener('button#qizButton', function (event) {
         event.preventDefault();
         storeContactInfo();
         console.log('Form Data:', formData);
