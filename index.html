@@ -848,9 +848,10 @@
 							<img src="img/qiz-pic.jpg" alt="Qiz">
 							<span class="qizPicLine2"></span>
 						</div>
-						<div class="qizTitle">З якою метою розглядаєте покупку?</div>
+						<div class="qizTitle" id="qizTitle1">З якою метою розглядаєте покупку?</div>
+						<div class="qizTitle" id="qizTitle2">Який формат оплати більше підходить?</div>
 
-						<div class="qizColNum">Питання <span id="qizStart">1</span> з <span id="qizAnd">4</span></div>
+						<div class="qizColNum">Питання <span id="qizStart">1</span> з <span id="qizAnd">2</span></div>
 						<div class="qizProgWr">
 							<div class="qizProg" style="width: 25%;"></div>
 						</div>
@@ -858,31 +859,45 @@
 							<form action="index.html">
 								<div class="formGroup" id="stage1">
 									<label for="qiz1" class="formGroupLb">
-										<input type="radio" name="qizSel1" id="qiz1" checked="">
+										<input type="radio" name="qizSel1" id="qiz1" value="Для життя" checked="">
 										<span class="formGroupOw"></span>
 										<i>Для життя</i>
 									</label>
 									<label for="qiz2" class="formGroupLb">
-										<input type="radio" name="qizSel1" id="qiz2">
+										<input type="radio" name="qizSel1" value="Для відпочинку" id="qiz2">
 										<span class="formGroupOw"></span>
 										<i>Для відпочинку</i>
 									</label>
 									<label for="qiz3" class="formGroupLb">
-										<input type="radio" name="qizSel1" id="qiz3">
+										<input type="radio" name="qizSel1" value="Для інвестицій" id="qiz3">
 										<span class="formGroupOw"></span>
 										<i>Для інвестицій</i>
 									</label>
 								</div>
+								<div class="formGroup" id="stage2">
+									<label for="qiz4" class="formGroupLb">
+										<input type="radio" name="qizSel2" value="Одноразова оплата зі знижкою"
+											id="qiz4">
+										<span class="formGroupOw"></span>
+										<i>Одноразова оплата зі знижкою</i>
+									</label>
+									<label for="qiz5" class="formGroupLb">
+										<input type="radio" name="qizSel2" value="Щомісячні платежі" id="qiz5">
+										<span class="formGroupOw"></span>
+										<i>Щомісячні платежі</i>
+									</label>
+									<label for="qiz6" class="formGroupLb">
+										<input type="radio" name="qizSel2" value="Щоквартальні платежі" id="qiz6">
+										<span class="formGroupOw"></span>
+										<i>Щоквартальні платежі</i>
+									</label>
+								</div>
 
 								<!-- Modal Qiz -->
-								<div class="modalQizWr">
+								<div class="modalQizWr" style="display: none;">
 									<div class="modalQiz">
 										<button class="closeModalQiz"></button>
 										<div class="qizModalT">Як з вами зв’язатися?</div>
-										<!-- <div class="modalQizPic">
-											<span class="qizPicLine1"></span>
-											<img src="img/qizForm-1.jpg" alt="Pic">
-										</div> -->
 										<div class="modalQizForm">
 											<label for="qizName">
 												Ваше ім'я*
@@ -909,24 +924,28 @@
 											<div class="formGroup formGroupQiz" id="stageForm">
 												<div class="formGroupWr">
 													<label for="formQiz1" class="formGroupLb">
-														<input type="radio" name="qizMedia" id="formQiz1" checked>
+														<input type="radio" name="qizMedia" value="Telegram"
+															id="formQiz1" checked>
 														<span class="formGroupOw"></span>
 														<i>Telegram</i>
 													</label>
 													<label for="formQiz2" class="formGroupLb">
-														<input type="radio" name="qizMedia" id="formQiz2">
+														<input type="radio" name="qizMedia" value="WhatsApp"
+															id="formQiz2">
 														<span class="formGroupOw"></span>
 														<i>WhatsApp</i>
 													</label>
 												</div>
 												<div class="formGroupWr">
 													<label for="formQiz3" class="formGroupLb">
-														<input type="radio" name="qizAction" id="formQiz3" checked>
+														<input type="radio" name="qizAction" value="Передзвонити"
+															id="formQiz3" checked>
 														<span class="formGroupOw"></span>
 														<i>Передзвонити</i>
 													</label>
 													<label for="formQiz4" class="formGroupLb">
-														<input type="radio" name="qizAction" id="formQiz4">
+														<input type="radio" name="qizAction" value="Написати"
+															id="formQiz4">
 														<span class="formGroupOw"></span>
 														<i>Написати</i>
 													</label>
@@ -959,6 +978,7 @@
 	<script src="js/fancyBox-3.0.47.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slide.js"></script>
+	<script src="js/qiz.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.prCarousel').owlCarousel({
