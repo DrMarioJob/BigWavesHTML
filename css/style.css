@@ -457,6 +457,11 @@ i {
     background-size: cover;
 }
 
+.sec8 {
+    background: url(../img/inv-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
 .secTitle {
     /* text-transform: uppercase; */
     font-weight: 400;
@@ -1558,4 +1563,88 @@ i {
 
 .modalQizWr {
     margin-top: 25px;
+}
+
+.invAllWr {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.invAllCol {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: -webkit-fill-available;
+    padding-bottom: 25px;
+}
+
+.invAllRow {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0, 177, 164, 0.8), rgba(0, 177, 164, 0.01));
+}
+
+.invInfo {
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0, 177, 164, 0.9), rgba(0, 177, 164, 0.4));
+    box-shadow: 0 10px 20px rgba(0, 177, 164, 0.9);
+}
+
+.invAllSpin {
+    width: 240px;
+    height: 240px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: invAllSpinAn 15s ease infinite;
+}
+
+@keyframes invAllSpinAn {
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.invAllRowT {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.invAllRowTitle {
+    font-weight: 800;
+    color: #00B0A4;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.invIco {
+    width: 60px;
+}
+
+.invCarousel img {
+    width: auto !important;
 }

@@ -896,7 +896,7 @@
 								<!-- Modal Qiz -->
 								<div class="modalQizWr" style="display: none;">
 									<div class="modalQiz">
-										<button class="closeModalQiz"></button>
+										<!-- <button type="button" class="closeModalQiz"></button> -->
 										<div class="qizModalT">Як з вами зв’язатися?</div>
 										<div class="modalQizForm">
 											<label for="qizName">
@@ -967,6 +967,80 @@
 							<button type="button" class="btn btn_bk" id="qizFirst">Повернутись</button>
 							<button type="button" class="btn btn_gr" id="qizNext">Далі</button>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section sec8" id="sec8">
+			<div class="container">
+				<h3 class="secTitle">Як інвестувати з нами</h3>
+				<div class="invAllWr">
+					<div class="owl-carousel invCarousel">
+						<div class="item">
+							<div class="invAllCol">
+								<div class="prSwipe"></div>
+								<div class="invAllRowTitle">Просто прилетіти</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="1">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-1.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Прибуття</div>
+								</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="3">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-2.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Перегляд</div>
+								</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="3">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-3.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Оформлення</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="invAllCol">
+								<div class="prSwipe"></div>
+								<div class="invAllRowTitle">Просто онлайн</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="4">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-4.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Вибір</div>
+								</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="5">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-5.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Онлайн огляд</div>
+								</div>
+								<div class="invAllRow">
+									<button type="button" class="invInfo" data-info="6">
+										<img src="img/info.png" alt="Info">
+									</button>
+									<img src="img/inv-3.png" class="invIco" alt="Ico">
+									<span class="invAllSpin"><img src="img/owl-text.png" alt="Pic"></span>
+									<div class="invAllRowT">Прибуття</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flexCenter">
+						<a href="#" class="btn btn_gr">Почніть із Вашим планом</a>
 					</div>
 				</div>
 			</div>
@@ -1070,6 +1144,28 @@
 
 		$(document).ready(function () {
 			$('.baliInvCarousel').owlCarousel({
+				loop: true,
+				margin: 25,
+				nav: false,
+				autoplay: false,
+				autoplayTimeout: 5000,
+				autoplayHoverPause: false,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
+				}
+			})
+		});
+
+		$(document).ready(function () {
+			$('.invCarousel').owlCarousel({
 				loop: true,
 				margin: 25,
 				nav: false,
