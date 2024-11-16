@@ -574,7 +574,9 @@ i {
 }
 
 .logoB {
-    max-width: 60%;
+    /* max-width: 60%; */
+    width: 211px;
+    height: 118px;
 }
 
 .prMainStat div {
@@ -2026,8 +2028,9 @@ button.invInfo {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-radius: 5px;
-    height: 40px !important;
+    height: 45px !important;
     width: -webkit-fill-available;
+    box-sizing: border-box;
 }
 
 .defForm input[type="text"],
@@ -2047,6 +2050,7 @@ select option {
     font-size: 20px;
 }
 
+.closeInvestWithUsForm,
 .closeMainReasonsForm,
 .closeWhyBaliForm,
 .closeAboutForm,
@@ -2062,6 +2066,7 @@ select option {
     right: 10px;
 }
 
+.investWithUsForm,
 .mainReasonsForm,
 .whyBaliForm,
 .aboutForm,
@@ -2070,6 +2075,7 @@ select option {
     display: none;
 }
 
+.investWithUsActive,
 .mainReasonsFormActive,
 .whyBaliFormActive,
 .aboutFormActive,
@@ -2086,4 +2092,20 @@ select option {
 
 .aboutFormActive {
     padding-top: 40px;
+}
+
+.formGroupCalc img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.formGroupCalcWr {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.formGroupCalc {
+    background: linear-gradient(to left, rgba(0, 176, 164, 0.3), rgba(0, 176, 164, 0.01));
+    border-radius: 5px;
 }
