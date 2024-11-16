@@ -15,11 +15,9 @@
 	<main class="mainHome">
 		<!-- Modal min -->
 		<div class="modalBody">
-			<button type="button" class="closeModalBody"></button>
-			<div class="modalBodyLogo"><img src="img/logo-b.png" alt="Logo"></div>
 			<div class="modalBodyBtn">
-				<a href="#" class="btn btn_gr bordrR">Вибрати юнiт</a>
-				<a href="#" class="btn btn_gr bordrL selectMd">Замовити дзвiнок</a>
+				<a href="/#sec1" class="btn btn_gr bordrR">Вибрати юнiт</a>
+				<span class="btn btn_gr bordrL selectMd">Замовити дзвiнок</span>
 			</div>
 			<div class="mainMdWr" id="mainMd">
 				<a href="#" target="_blank"><img src="img/wcp-b.png" alt="Ico"></a>
@@ -36,17 +34,15 @@
 					Ваше ім'я*
 					<input type="text" name="headFormName" id="headFormName" required>
 				</label>
-				<div class="qizInpFl">
-					<label for="headFormPCode">
-						Ваш телефон*
-						<select name="headFormPCode" id="headFormPCode">
-							<option value="+380">+380</option>
-						</select>
-					</label>
-					<label for="headFormPhone">
-						<input type="text" name="headFormPhone" id="headFormPhone" required>
-					</label>
-				</div>
+				<label for="headFormPCode">
+					Ваш телефон*
+					<select name="headFormPCode" id="headFormPCode" class="countrySelect">
+
+					</select>
+				</label>
+				<label for="headFormPhone">
+					<input type="text" name="headFormPhone" id="headFormPhone" required>
+				</label>
 				<label for="headFormMail">
 					Ваш email
 					<input type="email" name="headFormMail" id="headFormMail">
@@ -100,17 +96,15 @@
 					Ваше ім'я*
 					<input type="text" name="calcFormName" id="calcFormName" required>
 				</label>
-				<div class="qizInpFl">
-					<label for="calcFormPCode">
-						Ваш телефон*
-						<select name="calcFormPCode" id="calcFormPCode">
-							<option value="+380">+380</option>
-						</select>
-					</label>
-					<label for="calcFormPhone">
-						<input type="text" name="calcFormPhone" id="calcFormPhone" required>
-					</label>
-				</div>
+				<label for="calcFormPCode">
+					Ваш телефон*
+					<select name="calcFormPCode" id="calcFormPCode" class="countrySelect">
+
+					</select>
+				</label>
+				<label for="calcFormPhone">
+					<input type="text" name="calcFormPhone" id="calcFormPhone" required>
+				</label>
 				<label for="calcFormMail">
 					Ваш email
 					<input type="email" name="calcFormMail" id="calcFormMail">
@@ -159,22 +153,20 @@
 		<div class="defForm aboutForm" id="aboutForm">
 			<button type="button" class="closeAboutForm"></button>
 			<form action="/">
-				<div class="defFormTitle">Як з вами зв’язатися?</div>
+				<div class="defFormTitle">Заповніть форму і отримайте безкоштовну консультацію з менеджером</div>
 				<label for="aboutFormName">
 					Ваше ім'я*
 					<input type="text" name="aboutFormName" id="aboutFormName" required>
 				</label>
-				<div class="qizInpFl">
-					<label for="aboutFormPCode">
-						Ваш телефон*
-						<select name="aboutFormPCode" id="aboutFormPCode">
-							<option value="+380">+380</option>
-						</select>
-					</label>
-					<label for="aboutFormPhone">
-						<input type="text" name="aboutFormPhone" id="aboutFormPhone" required>
-					</label>
-				</div>
+				<label for="aboutFormPCode">
+					Ваш телефон*
+					<select name="aboutFormPCode" id="aboutFormPCode" class="countrySelect">
+
+					</select>
+				</label>
+				<label for="aboutFormPhone">
+					<input type="text" name="aboutFormPhone" id="aboutFormPhone" required>
+				</label>
 				<label for="aboutFormMail">
 					Ваш email
 					<input type="email" name="aboutFormMail" id="aboutFormMail">
@@ -219,6 +211,136 @@
 			</form>
 		</div>
 		<!-- About form -->
+
+		<!-- Why bali form -->
+		<div class="defForm whyBaliForm" id="whyBaliForm">
+			<button type="button" class="closeWhyBaliForm"></button>
+			<form action="/">
+				<div class="defFormTitle">Як з вами зв’язатися?</div>
+				<label for="whyBaliFormName">
+					Ваше ім'я*
+					<input type="text" name="whyBaliFormName" id="whyBaliFormName" required>
+				</label>
+				<label for="whyBaliFormPCode">
+					Ваш телефон*
+					<select name="whyBaliFormPCode" id="whyBaliFormPCode" class="countrySelect">
+
+					</select>
+				</label>
+				<label for="whyBaliFormPhone">
+					<input type="text" name="whyBaliFormPhone" id="whyBaliFormPhone" required>
+				</label>
+				<label for="whyBaliFormMail">
+					Ваш email
+					<input type="email" name="whyBaliFormMail" id="whyBaliFormMail">
+				</label>
+
+				<i>Оберіть зручний для вас месенджер</i>
+
+				<div class="formGroup">
+					<div class="formGroupWr">
+						<label for="whyBaliFormMediaTg" class="formGroupLb">
+							<input type="radio" name="whyBaliFormMedia" value="Telegram" id="whyBaliFormMediaTg"
+								checked>
+							<span class="formGroupOw"></span>
+							<i>Telegram</i>
+						</label>
+						<label for="whyBaliFormMediaWApp" class="formGroupLb">
+							<input type="radio" name="whyBaliFormMedia" value="WhatsApp" id="whyBaliFormMediaWApp">
+							<span class="formGroupOw"></span>
+							<i>WhatsApp</i>
+						</label>
+					</div>
+					<div class="formGroupWr">
+						<label for="whyBaliFormAction1" class="formGroupLb">
+							<input type="radio" name="whyBaliFormAction" value="Передзвонити" id="whyBaliFormAction1"
+								checked>
+							<span class="formGroupOw"></span>
+							<i>Передзвонити</i>
+						</label>
+						<label for="whyBaliFormAction2" class="formGroupLb">
+							<input type="radio" name="whyBaliFormAction" value="Написати" id="whyBaliFormAction2">
+							<span class="formGroupOw"></span>
+							<i>Написати</i>
+						</label>
+					</div>
+				</div>
+				<div class="flexCenter">
+					<button type="submit" name="whyBaliFormBtn" class="btn btn_gr">Відправити</button>
+				</div>
+				<i class="qizBtnT">
+					Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+					погоджуєтеся з нашою політикою конфіденційності.
+				</i>
+			</form>
+		</div>
+		<!-- Why bali form -->
+
+		<!-- Main reasons form -->
+		<div class="defForm mainReasonsForm" id="mainReasonsForm">
+			<button type="button" class="closeMainReasonsForm"></button>
+			<form action="/">
+				<div class="defFormTitle">Як з вами зв’язатися?</div>
+				<label for="mainReasonsFormName">
+					Ваше ім'я*
+					<input type="text" name="mainReasonsFormName" id="mainReasonsFormName" required>
+				</label>
+				<label for="mainReasonsFormPCode">
+					Ваш телефон*
+					<select name="mainReasonsFormPCode" id="mainReasonsFormPCode" class="countrySelect">
+
+					</select>
+				</label>
+				<label for="mainReasonsFormPhone">
+					<input type="text" name="mainReasonsFormPhone" id="mainReasonsFormPhone" required>
+				</label>
+				<label for="mainReasonsFormMail">
+					Ваш email
+					<input type="email" name="mainReasonsFormMail" id="mainReasonsFormMail">
+				</label>
+
+				<i>Оберіть зручний для вас месенджер</i>
+
+				<div class="formGroup">
+					<div class="formGroupWr">
+						<label for="mainReasonsFormMediaTg" class="formGroupLb">
+							<input type="radio" name="mainReasonsFormMedia" value="Telegram" id="mainReasonsFormMediaTg"
+								checked>
+							<span class="formGroupOw"></span>
+							<i>Telegram</i>
+						</label>
+						<label for="mainReasonsFormMediaWApp" class="formGroupLb">
+							<input type="radio" name="mainReasonsFormMedia" value="WhatsApp"
+								id="mainReasonsFormMediaWApp">
+							<span class="formGroupOw"></span>
+							<i>WhatsApp</i>
+						</label>
+					</div>
+					<div class="formGroupWr">
+						<label for="mainReasonsFormAction1" class="formGroupLb">
+							<input type="radio" name="mainReasonsFormAction" value="Передзвонити"
+								id="mainReasonsFormAction1" checked>
+							<span class="formGroupOw"></span>
+							<i>Передзвонити</i>
+						</label>
+						<label for="mainReasonsFormAction2" class="formGroupLb">
+							<input type="radio" name="mainReasonsFormAction" value="Написати"
+								id="mainReasonsFormAction2">
+							<span class="formGroupOw"></span>
+							<i>Написати</i>
+						</label>
+					</div>
+				</div>
+				<div class="flexCenter">
+					<button type="submit" name="mainReasonsFormBtn" class="btn btn_gr">Відправити</button>
+				</div>
+				<i class="qizBtnT">
+					Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+					погоджуєтеся з нашою політикою конфіденційності.
+				</i>
+			</form>
+		</div>
+		<!-- Why bali form -->
 
 
 		<header class="header">
@@ -504,15 +626,6 @@
 								інвесторів.
 							</p>
 							<p>
-								Отримайте можливість стати власником найкращої нерухомості в «найкрасивішому і
-								туристичному
-								місці світу». Ми спеціалізуємося на придбанні найкращих земельних ділянок у популярних
-								курортних
-								зонах острова Балі, що забезпечує високу рентабельність для отримання пасивного доходу.
-								Ми
-								будуємо вілли, апартаменти, готелі.
-							</p>
-							<p>
 								Big Waves Development — міжнародна команда спеціалістів з 12-річним досвідом роботи у
 								будівництві: таунхауси, вілли, офісні корпоративні приміщення, апарт-комплекси.
 							</p>
@@ -557,7 +670,7 @@
 							</div>
 
 							<div class="aboutQo">
-								<img src="img/doc.png" alt="Doc">
+								<!-- <img src="img/doc.png" alt="Doc"> -->
 								<div>
 									Ми маємо всі необхідні ліцензії та реєстраційні документи, що забезпечують юридичну
 									цілісність і надійність наших проєктів.
@@ -587,17 +700,17 @@
 						<div class="formTitle">Бюджет 1-го внеску</div>
 						<div class="formGroup">
 							<label for="sm1" class="formGroupLb">
-								<input type="radio" name="amount1" id="sm1" checked>
+								<input type="radio" name="amount1" value="до $30 000" id="sm1" checked>
 								<span class="formGroupOw"></span>
 								<i>до</i> $30 000
 							</label>
 							<label for="sm2" class="formGroupLb">
-								<input type="radio" name="amount1" id="sm2">
+								<input type="radio" name="amount1" value="$30 000 - $150 000" id="sm2">
 								<span class="formGroupOw"></span>
 								$30 000 - $150 000
 							</label>
 							<label for="sm3" class="formGroupLb">
-								<input type="radio" name="amount1" id="sm3">
+								<input type="radio" name="amount1" value="понад $150 000" id="sm3">
 								<span class="formGroupOw"></span>
 								<i>понад</i> $150 000
 							</label>
@@ -606,22 +719,91 @@
 						<div class="formTitle">Мета покупки</div>
 						<div class="formGroup">
 							<label for="tg1" class="formGroupLb">
-								<input type="radio" name="target1" id="tg1" checked>
+								<input type="radio" name="target1" value="Для інвестицій" id="tg1" checked>
 								<span class="formGroupOw"></span>
 								<i>Для інвестицій</i>
 							</label>
 							<label for="tg2" class="formGroupLb">
-								<input type="radio" name="target1" id="tg2">
+								<input type="radio" name="target1" value="Для проживання" id="tg2">
 								<span class="formGroupOw"></span>
 								<i>Для проживання</i>
 							</label>
 							<label for="tg3" class="formGroupLb">
-								<input type="radio" name="target1" id="tg3">
+								<input type="radio" name="target1" value="Для відпочинку" id="tg3">
 								<span class="formGroupOw"></span>
 								<i>Для відпочинку</i>
 							</label>
 						</div>
-						<button type="button" class="btn btn_gr">Отримати</button>
+
+						<div class="modalPersOfferWr">
+							<div class="defForm modalPersOffer">
+								<div class="persOfferT">Заповніть форму і отримайте безкоштовну консультацію з
+									менеджером
+								</div>
+								<div class="modalQizForm">
+									<label for="persOfferName">
+										Ваше ім'я*
+										<input type="text" name="persOfferName" id="persOfferName" required>
+									</label>
+									<label for="persOfferPCode">
+										Ваш телефон*
+										<select name="persOfferPCode" id="persOfferPCode" class="countrySelect">
+
+										</select>
+									</label>
+									<label for="persOfferPhone">
+										<input type="text" name="persOfferPhone" id="persOfferPhone" required>
+									</label>
+									<label for="persOfferMail">
+										Ваш email
+										<input type="email" name="persOfferMail" id="persOfferMail">
+									</label>
+
+									<i>Оберіть зручний для вас месенджер</i>
+
+									<div class="formGroup formGroupQiz" id="stageForm">
+										<div class="formGroupWr">
+											<label for="persOffer1" class="formGroupLb">
+												<input type="radio" name="persOfferMedia" value="Telegram"
+													id="persOffer1" checked>
+												<span class="formGroupOw"></span>
+												<i>Telegram</i>
+											</label>
+											<label for="persOffer2" class="formGroupLb">
+												<input type="radio" name="persOfferMedia" value="WhatsApp"
+													id="persOffer2">
+												<span class="formGroupOw"></span>
+												<i>WhatsApp</i>
+											</label>
+										</div>
+										<div class="formGroupWr">
+											<label for="persOffer3" class="formGroupLb">
+												<input type="radio" name="persOfferAction" value="Передзвонити"
+													id="persOffer3" checked>
+												<span class="formGroupOw"></span>
+												<i>Передзвонити</i>
+											</label>
+											<label for="persOffer4" class="formGroupLb">
+												<input type="radio" name="persOfferAction" value="Написати"
+													id="persOffer4">
+												<span class="formGroupOw"></span>
+												<i>Написати</i>
+											</label>
+										</div>
+									</div>
+									<div class="flexCenter">
+										<button type="submit" id="persOfferButton"
+											class="btn btn_gr">Відправити</button>
+									</div>
+									<i class="qizBtnT">
+										Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+										погоджуєтеся з нашою політикою конфіденційності.
+									</i>
+								</div>
+							</div>
+						</div>
+
+						<button type="button" class="btn btn_gr modalPersOfferBtn">Отримати</button>
 					</form>
 				</div>
 			</div>
@@ -788,8 +970,7 @@
 										<img src="img/star-1.png" alt="Star">
 										<div class="baliStarColT">1 місце</div>
 										<div class="baliStarColD">
-											Серед найкращих туристичних сіл 2023 року за версією Всесвітньої туристичної
-											організації ООН (UNWTO)
+											Серед найкращих туристичних сіл 2023 року за версією
 										</div>
 									</div>
 									<div class="baliStarCol baliStarCol3">
@@ -867,7 +1048,7 @@
 								</div>
 							</div>
 							<div class="flexCenter">
-								<a href="#" class="btn btn_gr">Отримати наш каталог</a>
+								<span class="btn btn_gr" id="whyBaliFormSubmit">Отримати наш каталог</span>
 							</div>
 						</div>
 					</div>
@@ -1037,7 +1218,7 @@
 								Консультація нашого спеціаліста з будь-якої з цих інвестиційних областей
 							</div>
 							<div class="flexCenter">
-								<a href="#" class="btn btn_gr">Отримати консультацію</a>
+								<span class="btn btn_gr" id="mainReasonsFormSubmit">Отримати консультацію</span>
 							</div>
 						</div>
 					</div>
@@ -1111,17 +1292,15 @@
 												Ваше ім'я*
 												<input type="text" name="qizName" id="qizName" required>
 											</label>
-											<div class="qizInpFl">
-												<label for="qizPCode">
-													Ваш телефон*
-													<select name="qizPCode" id="qizPCode">
-														<option value="+380">+380</option>
-													</select>
-												</label>
-												<label for="qizPhone">
-													<input type="text" name="qizPhone" id="qizPhone" required>
-												</label>
-											</div>
+											<label for="qizPCode">
+												Ваш телефон*
+												<select name="qizPCode" id="qizPCode" class="countrySelect">
+
+												</select>
+											</label>
+											<label for="qizPhone">
+												<input type="text" name="qizPhone" id="qizPhone" required>
+											</label>
 											<label for="qizMail">
 												Ваш email
 												<input type="email" name="qizMail" id="qizMail">
@@ -1362,17 +1541,15 @@
 							Ваше ім'я*
 							<input type="text" name="sec10Name" id="sec10Name" required>
 						</label>
-						<div class="qizInpFl">
-							<label for="sec10PCode">
-								Ваш телефон*
-								<select name="sec10PCode" id="sec10PCode">
-									<option value="+380">+380</option>
-								</select>
-							</label>
-							<label for="sec10Phone">
-								<input type="text" name="sec10Phone" id="sec10Phone" required>
-							</label>
-						</div>
+						<label for="sec10PCode">
+							Ваш телефон*
+							<select name="sec10PCode" id="sec10PCode" class="countrySelect">
+
+							</select>
+						</label>
+						<label for="sec10Phone">
+							<input type="text" name="sec10Phone" id="sec10Phone" required>
+						</label>
 						<label for="sec10Mail">
 							Ваш email
 							<input type="email" name="sec10Mail" id="sec10Mail">
@@ -1692,6 +1869,89 @@
 
 			closeHeadForm.addEventListener('click', removeHeadFormActive);
 			document.addEventListener('click', removeHeadFormActive);
+		});
+
+		// Why bali form
+		document.addEventListener('DOMContentLoaded', () => {
+			const headFormSubmit = document.getElementById('whyBaliFormSubmit');
+			const headForm = document.getElementById('whyBaliForm');
+			const closeHeadForm = document.querySelector('.closeWhyBaliForm');
+
+			headFormSubmit.addEventListener('click', () => {
+				headForm.classList.add('whyBaliFormActive');
+			});
+
+			const removeHeadFormActive = (event) => {
+				if (
+					event.target === closeHeadForm ||
+					(!headForm.contains(event.target) && event.target !== headFormSubmit)
+				) {
+					headForm.classList.remove('whyBaliFormActive');
+				}
+			};
+
+			closeHeadForm.addEventListener('click', removeHeadFormActive);
+			document.addEventListener('click', removeHeadFormActive);
+		});
+
+		// Main reasons form
+		document.addEventListener('DOMContentLoaded', () => {
+			const headFormSubmit = document.getElementById('mainReasonsFormSubmit');
+			const headForm = document.getElementById('mainReasonsForm');
+			const closeHeadForm = document.querySelector('.closeMainReasonsForm');
+
+			headFormSubmit.addEventListener('click', () => {
+				headForm.classList.add('mainReasonsFormActive');
+			});
+
+			const removeHeadFormActive = (event) => {
+				if (
+					event.target === closeHeadForm ||
+					(!headForm.contains(event.target) && event.target !== headFormSubmit)
+				) {
+					headForm.classList.remove('mainReasonsFormActive');
+				}
+			};
+
+			closeHeadForm.addEventListener('click', removeHeadFormActive);
+			document.addEventListener('click', removeHeadFormActive);
+		});
+	</script>
+
+	<script>
+		async function loadCountryCodes() {
+			const selectElements = document.querySelectorAll('.countrySelect');
+
+			try {
+				const response = await fetch('https://restcountries.com/v3.1/all');
+				const countries = await response.json();
+
+				countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+
+				selectElements.forEach(selectElement => {
+					countries.forEach(country => {
+						if (country.idd?.root && country.idd?.suffixes) {
+							const countryCode = `${country.idd.root}${country.idd.suffixes[0]}`;
+							const option = document.createElement('option');
+							option.value = countryCode;
+							option.innerHTML = `
+                        ${country.name.common} (${countryCode})
+                    `;
+							selectElement.appendChild(option);
+						}
+					});
+				});
+			} catch (error) {
+				console.error('Ошибка загрузки данных о странах:', error);
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', loadCountryCodes);
+	</script>
+	<script>
+		// Personalized offer modal
+		document.querySelector('.modalPersOfferBtn').addEventListener('click', () => {
+			document.querySelector('.modalPersOfferWr').classList.toggle('modalPersOfferWrActive');
 		});
 	</script>
 </body>

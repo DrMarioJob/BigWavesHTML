@@ -281,7 +281,7 @@ img {
 
 .headerContT1 {
     background: rgba(59, 61, 63, 0.75);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     padding: 10px 20px;
     font-size: 16px;
@@ -316,7 +316,6 @@ i {
     border: none;
     outline: none;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 18px;
     color: #fff;
     display: flex;
@@ -326,10 +325,11 @@ i {
     text-align: center;
     justify-content: center;
     font-family: "Manrope", serif !important;
+    transition: all .3s ease;
 }
 
 .btn:hover {
-    opacity: 0.7;
+    transform: scale(1.05);
 }
 
 .btn_gr {
@@ -892,7 +892,7 @@ i {
 .formTitle {
     margin: 30px 0 20px 0;
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 22px;
     color: #00B0A4;
 }
@@ -983,7 +983,7 @@ i {
 
 .baliStatTitle {
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 24px;
     display: flex;
     align-items: start;
@@ -997,7 +997,7 @@ i {
 
 .baliStatCol {
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 24px;
     color: #00B0A4;
 }
@@ -1090,6 +1090,9 @@ i {
 
 .baliWrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .baliWrapperT .secTitle {
@@ -1448,14 +1451,14 @@ i {
 .aboutCarousel .owl-item,
 .prCarousel .owl-item {
     transition: all 1s ease;
-    transform: scale(0.95) !important;
+    /* transform: scale(0.95) !important; */
 }
 
 .baliInvCarousel .owl-item.active,
 .howBaliCarousel .owl-item.active,
 .aboutCarousel .owl-item.active,
 .prCarousel .owl-item.active {
-    transform: scale(1.0) !important;
+    /* transform: scale(1.0) !important; */
 }
 
 .modalQiz {
@@ -1533,8 +1536,9 @@ i {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-radius: 5px;
-    height: 40px;
-    width: -webkit-transform:;
+    height: 45px;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
 }
 
 .modalQizForm input[type="text"],
@@ -1633,10 +1637,17 @@ button.invInfo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: invAllSpinAn 15s ease infinite;
+}
+
+
+.invAllRow:hover .invAllSpin {
+    animation: invAllSpinAn 30s linear infinite;
 }
 
 @keyframes invAllSpinAn {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
 
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
@@ -1666,8 +1677,8 @@ button.invInfo {
 
 .closeModalInv {
     background: url(../img/close.png);
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border: none;
     outline: none;
     position: absolute;
@@ -1686,7 +1697,7 @@ button.invInfo {
     text-align: center;
     z-index: 5;
     border-top: 3px solid #00B0A4;
-    padding: 25px 7px 20px 7px;
+    padding: 40px 7px 20px 7px;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
 }
@@ -1861,19 +1872,17 @@ button.invInfo {
 .modalBody {
     position: fixed;
     z-index: 100;
-    top: 60px;
+    bottom: 10px;
     left: 0;
-    overflow: hidden;
-    background: url(../img/qiz-bg.jpg) top center no-repeat;
+    background: none;
     background-size: cover;
     width: -webkit-fill-available;
     height: auto;
     text-align: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
-    animation: calcBtnAnim 2s ease infinite;
+    transition: all .5s ease;
 }
 
 .modalBodyLogo img {
@@ -1883,24 +1892,23 @@ button.invInfo {
 .modalBodyBtn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
 }
 
 .modalBodyBtn .btn {
     box-shadow: none;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
+    border-radius: 35px;
 }
 
 .modalBodyBtn .bordrR {
-    border-radius: 10px 0 0 10px;
     border: 2px solid #00B0A4;
 }
 
 .modalBodyBtn .bordrL {
-    border-radius: 0 10px 10px 0;
-    background: none;
+    background: #2D2C30;
     border: 2px solid #00B0A4;
 }
 
@@ -1919,9 +1927,9 @@ button.invInfo {
 }
 
 .closeModalBody {
-    background: url(../img/close.png);
-    width: 15px;
-    height: 15px;
+    background: url(../img/close.png) center no-repeat;
+    width: 25px;
+    height: 25px;
     border: none;
     outline: none;
     position: absolute;
@@ -1940,7 +1948,28 @@ button.invInfo {
     z-index: 110;
     top: 60px;
     left: 0;
-    max-width: 90%;
+    width: -webkit-fill-available;
+}
+
+.persOfferT {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modalPersOffer {
+    position: relative;
+    top: 0;
+}
+
+.modalPersOfferWr {
+    width: -webkit-fill-available;
+    display: none;
+}
+
+.modalPersOfferWrActive {
+    display: block;
 }
 
 .defForm form {
@@ -1997,13 +2026,18 @@ button.invInfo {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-radius: 5px;
-    height: 40px;
-    width: -webkit-transform:;
+    height: 40px !important;
+    width: -webkit-fill-available;
 }
 
 .defForm input[type="text"],
 .defForm input[type="email"] {
     padding-left: 15px;
+}
+
+select option {
+    background: #2D2C30;
+    color: #00B0A4;
 }
 
 .defFormTitle {
@@ -2013,12 +2047,14 @@ button.invInfo {
     font-size: 20px;
 }
 
+.closeMainReasonsForm,
+.closeWhyBaliForm,
 .closeAboutForm,
 .closeCalcForm,
 .closeheadForm {
-    background: url(../img/close.png);
-    width: 15px;
-    height: 15px;
+    background: url(../img/close.png) center no-repeat;
+    width: 25px;
+    height: 25px;
     border: none;
     outline: none;
     position: absolute;
@@ -2026,14 +2062,28 @@ button.invInfo {
     right: 10px;
 }
 
+.mainReasonsForm,
+.whyBaliForm,
 .aboutForm,
 .calcForm,
 .headForm {
     display: none;
 }
 
+.mainReasonsFormActive,
+.whyBaliFormActive,
 .aboutFormActive,
 .calcFormActive,
 .headFormActive {
     display: flex;
+}
+
+.mainMdWr a {
+    border-radius: 5px;
+    padding: 7px;
+    background: #2D2C30;
+}
+
+.aboutFormActive {
+    padding-top: 40px;
 }

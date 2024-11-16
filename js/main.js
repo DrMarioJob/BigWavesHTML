@@ -17,21 +17,32 @@ document.querySelector('.selectMd').addEventListener('click', () => {
 // Body modal
 document.addEventListener("DOMContentLoaded", () => {
     const modalBody = document.querySelector(".modalBody");
-    const closeModalButton = document.querySelector(".closeModalBody");
     const MODAL_HIDDEN_KEY = "modalHiddenUntil";
+    let hasScrolled = false;
 
     const isModalHidden = () => {
         const hiddenUntil = localStorage.getItem(MODAL_HIDDEN_KEY);
         return hiddenUntil && new Date().getTime() < new Date(hiddenUntil).getTime();
     };
 
-    if (isModalHidden()) {
-        modalBody.style.display = "none";
-    }
+    const showModal = () => {
+        if (!isModalHidden()) {
+            modalBody.style.display = "flex";
+        }
+    };
 
-    closeModalButton.addEventListener("click", () => {
+    const hideModal = () => {
         modalBody.style.display = "none";
-        const hiddenUntil = new Date().getTime() + 30 * 60 * 1000;
-        localStorage.setItem(MODAL_HIDDEN_KEY, new Date(hiddenUntil).toISOString());
+    };
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100 && !hasScrolled) {
+            hasScrolled = true;
+            showModal();
+        } else if (window.scrollY < 100 && hasScrolled) {
+            hasScrolled = false;
+            hideModal();
+        }
     });
 });
+
