@@ -517,6 +517,11 @@ i {
     background-size: cover;
 }
 
+.secBenefitsWorking {
+    background: url(../img/secBenefitsWorking.jpg) top center no-repeat;
+    background-size: cover;
+}
+
 .secMainTarget {
     background: #3F4042;
 }
@@ -2559,4 +2564,50 @@ select option {
 
 .btnMt30 {
     margin-top: 30px;
+}
+
+.secPagePartners {
+    background: url(../img/secPagePartners.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.pagePartnersPic {
+    position: relative;
+    padding: 20px 0 0 20px;
+}
+
+.pagePartnersPic img {
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.pagePartnersPic .qizPicLine1 {
+    left: 0;
+    z-index: 0;
+}
+
+.pagePartnersWr {
+    margin-top: 30px;
+}
+
+.pagePartnersDesc {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pagePartnersWr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagePartnersDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secBenefitsWorking .secTitlePage span {
+    border: none;
 }
