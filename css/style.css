@@ -134,7 +134,27 @@ body {
     font-size: 18px;
     background: #252526;
     color: #fff;
-    min-height: 6000px;
+    /* min-height: 6000px; */
+}
+
+.owl-dots {
+    display: flex !important;
+    z-index: 1;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.owl-dots button {
+    background: #fff !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.owl-dots button.active {
+    background: #00B0A4 !important;
 }
 
 .mainNav {
@@ -470,6 +490,35 @@ i {
 .sec10 {
     background: url(../img/sec10.jpg) top center no-repeat;
     background-size: cover;
+}
+
+.secOurPhilosophy {
+    background: url(../img/about-sec.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secOurTeam {
+    background: url(../img/team.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secEstateIndonesia {
+    background: url(../img/secEstateIndonesia.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secPartnerP {
+    background: url(../img/secEstateIndonesia.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secConcretePlant {
+    background: url(../img/secConcretePlant.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secMainTarget {
+    background: #3F4042;
 }
 
 .secTitle {
@@ -1792,6 +1841,7 @@ button.invInfo {
     background: linear-gradient(to bottom, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
 }
 
+.sectionLine,
 .sec1,
 .sec2,
 .sec3,
@@ -1805,6 +1855,7 @@ button.invInfo {
     position: relative;
 }
 
+.sectionLine::before,
 .sec1::before,
 .sec2::before,
 .sec3::before,
@@ -2050,6 +2101,7 @@ select option {
     font-size: 20px;
 }
 
+.closeProductionProcessForm,
 .closeInvestWithUsForm,
 .closeMainReasonsForm,
 .closeWhyBaliForm,
@@ -2066,6 +2118,7 @@ select option {
     right: 10px;
 }
 
+.productionProcessForm,
 .investWithUsForm,
 .mainReasonsForm,
 .whyBaliForm,
@@ -2075,6 +2128,7 @@ select option {
     display: none;
 }
 
+.productionProcessActive,
 .investWithUsActive,
 .mainReasonsFormActive,
 .whyBaliFormActive,
@@ -2108,4 +2162,401 @@ select option {
 .formGroupCalc {
     background: linear-gradient(to left, rgba(0, 176, 164, 0.3), rgba(0, 176, 164, 0.01));
     border-radius: 5px;
+}
+
+.headerPage {
+    padding: 0;
+    min-height: auto;
+}
+
+.pageAbout .sec3 {
+    padding-top: 70px;
+}
+
+.secTitlePage span {
+    color: #00B0A4;
+    border: 1px solid #00B0A4;
+    padding: 5px 10px;
+    line-height: 0px;
+}
+
+.ourPhilosophyVideo {
+    margin: 35px 0;
+    position: relative;
+    padding: 20px 20px 0 0;
+}
+
+.ourPhilosophyVideo img {
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.ourPhilosophyTWr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mainTargetWr {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainTargetT {
+    font-weight: 400;
+    font-size: 34px;
+    display: block;
+    text-align: center;
+}
+
+.mainTargetT span {
+    color: #00B0A4;
+}
+
+.mainTarget {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    padding: 0 15px 0 15px;
+}
+
+.mainTargetP img {
+    border-radius: 10px;
+}
+
+.mainTargetD {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mainTargetL1,
+.mainTargetL2,
+.mainTargetL3,
+.mainTargetL4 {
+    position: absolute;
+}
+
+.mainTargetL1 {
+    top: 15px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background: #00B0A4;
+}
+
+.mainTargetL2 {
+    top: 15px;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    background: #00B0A4;
+}
+
+.mainTargetL3 {
+    top: 15px;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 176, 164, 0.99), rgba(0, 176, 164, 0.01));
+}
+
+.mainTargetL4 {
+    top: 15px;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 176, 164, 0.99), rgba(0, 176, 164, 0.01));
+}
+
+.secOurTeam {
+    position: relative;
+}
+
+.teamOwlWr {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.teamOwl {
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0, 176, 164, 0.99), rgba(0, 176, 164, 0.01));
+}
+
+.teamOwl2 {
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    background: linear-gradient(to top, rgba(62, 63, 65, 0.99), rgba(62, 63, 65, 0.01));
+}
+
+.teamOwl3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -60px;
+    position: relative;
+}
+
+.teamOwl3 img {
+    border-radius: 100%;
+}
+
+.teamOwl2Name {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.teamVideo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(41, 46, 46, 0.99), rgba(59, 60, 62, 0.99));
+}
+
+.partLogos img,
+.teamVideo img {
+    border-radius: 0;
+    width: auto !important;
+}
+
+.secConcretePlant .secTitlePage span,
+.secEstateIndonesia .secTitlePage span {
+    border: none;
+}
+
+.estateIndonesiaWr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+
+.estateIndonesiaT {
+    font-size: 20px;
+}
+
+.estateIndonesiaT span {
+    color: #00B0A4;
+}
+
+.estateIndonesiaD {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.estateIndonesiaList {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.estateIndonesiaList img {
+    width: auto !important;
+}
+
+.partLogosWr {
+    margin-top: 50px;
+    position: relative;
+}
+
+.partLogos {
+    background: #252526;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+
+.concretePlantWr {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.concretePlantPic img {
+    border-radius: 10px;
+}
+
+.concretePlantD {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.concretePlantT {
+    font-size: 20px;
+    font-weight: 800;
+    color: #00B0A4;
+    text-align: center;
+}
+
+.concretePlantListWr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.concretePlantList {
+    display: flex;
+    gap: 10px;
+}
+
+.concretePlantListIco {
+    border-radius: 5px;
+    background: #252526;
+    padding: 5px;
+}
+
+.concretePlantListDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    background: linear-gradient(to right, rgba(0, 176, 164, 0.3), rgba(0, 176, 164, 0.01));
+}
+
+.productionProcessWr {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.productionProcess {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.productionProcessIco img {
+    border-radius: 10px;
+}
+
+.productionProcessIco,
+.productionProcessAr {
+    width: 100%;
+}
+
+.productionProcessIco {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.productionProcess2 .productionProcessAr {
+    justify-content: end;
+    display: flex;
+}
+
+.productionProcessSt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.concretePlantWr .aboutQo {
+    margin: 0;
+}
+
+.productionProcessCarousel img {
+    width: auto !important;
+}
+
+.concretePlantListIco img {
+    width: 70px !important;
+}
+
+.followUsWr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.followUsWr2 {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.followUsWr3 {
+    margin-top: 50px;
+}
+
+.followUsList {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.followUsList {
+    text-align: center;
+    position: relative;
+}
+
+.followUsListNum {
+    font-size: 80px;
+    opacity: 0.1;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.followUsBtnWr {
+    margin-top: 30px;
+}
+
+.btnMt30 {
+    margin-top: 30px;
 }
