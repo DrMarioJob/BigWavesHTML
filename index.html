@@ -398,6 +398,83 @@
 		</div>
 		<!--Invest with us form -->
 
+		<!--Visit office us form -->
+		<div class="defForm visitOfficeForm" id="visitOfficeForm">
+			<button type="button" class="closeVisitOfficeForm"></button>
+			<form action="/">
+				<div class="defFormTitle">Заповніть форму, і наш менеджер зв'яжеться з вами для підтвердження часу
+					візиту до офісу в Чангу.</div>
+				<label for="visitOfficeFormName">
+					Ваше ім'я*
+					<input type="text" name="visitOfficeFormName" id="visitOfficeFormName" required>
+				</label>
+
+				<div class="flexGroup">
+					<label for="visitOfficeFormPCode">
+						Ваш телефон*
+						<div class="custom-dropdown">
+							<div class="dropdown-selected">
+								<img class="selected-flag" src="" alt=""
+									style="width: 20px; height: 15px; margin-right: 10px; display: none;">
+								<span class="selected-text">Виберіть країну</span>
+							</div>
+							<div class="dropdown-options"></div>
+							<input type="hidden" name="selectedCountry[]" class="selectedCountry" value="">
+						</div>
+					</label>
+					<label for="visitOfficeFormPhone">
+						<input type="text" name="visitOfficeFormPhone" id="visitOfficeFormPhone" required>
+					</label>
+				</div>
+
+				<label for="visitOfficeFormMail">
+					Ваш email
+					<input type="email" name="visitOfficeFormMail" id="visitOfficeFormMail">
+				</label>
+
+				<i>Оберіть зручний для вас месенджер</i>
+
+				<div class="formGroup">
+					<div class="formGroupWr">
+						<label for="visitOfficeFormMediaTg" class="formGroupLb">
+							<input type="radio" name="visitOfficeFormMedia" value="Telegram" id="visitOfficeFormMediaTg"
+								checked>
+							<span class="formGroupOw"></span>
+							<i>Telegram</i>
+						</label>
+						<label for="visitOfficeFormMediaWApp" class="formGroupLb">
+							<input type="radio" name="visitOfficeFormMedia" value="WhatsApp"
+								id="visitOfficeFormMediaWApp">
+							<span class="formGroupOw"></span>
+							<i>WhatsApp</i>
+						</label>
+					</div>
+					<div class="formGroupWr">
+						<label for="visitOfficeFormAction1" class="formGroupLb">
+							<input type="radio" name="visitOfficeFormAction" value="Передзвонити"
+								id="visitOfficeFormAction1" checked>
+							<span class="formGroupOw"></span>
+							<i>Передзвонити</i>
+						</label>
+						<label for="visitOfficeFormAction2" class="formGroupLb">
+							<input type="radio" name="visitOfficeFormAction" value="Написати"
+								id="visitOfficeFormAction2">
+							<span class="formGroupOw"></span>
+							<i>Написати</i>
+						</label>
+					</div>
+				</div>
+				<div class="flexCenter">
+					<button type="submit" name="ivisitOfficeFormBtn" class="btn btn_gr">Відправити</button>
+				</div>
+				<i class="qizBtnT">
+					Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+					погоджуєтеся з нашою політикою конфіденційності.
+				</i>
+			</form>
+		</div>
+		<!-- Visit office form -->
+
 
 		<header class="header">
 			<nav class="mainNav">
@@ -652,15 +729,25 @@
 							Ваше ім'я*
 							<input type="text" name="calcFormName" id="calcFormName" required>
 						</label>
-						<label for="calcFormPCode">
-							Ваш телефон*
-							<select name="calcFormPCode" id="calcFormPCode" class="countrySelect">
 
-							</select>
-						</label>
-						<label for="calcFormPhone">
-							<input type="text" name="calcFormPhone" id="calcFormPhone" required>
-						</label>
+						<div class="flexGroup">
+							<label for="calcFormPCode">
+								Ваш телефон*
+								<div class="custom-dropdown">
+									<div class="dropdown-selected">
+										<img class="selected-flag" src="" alt=""
+											style="width: 20px; height: 15px; margin-right: 10px; display: none;">
+										<span class="selected-text">Виберіть країну</span>
+									</div>
+									<div class="dropdown-options"></div>
+									<input type="hidden" name="selectedCountry[]" class="selectedCountry" value="">
+								</div>
+							</label>
+							<label for="calcFormPhone">
+								<input type="text" name="calcFormPhone" id="calcFormPhone" required>
+							</label>
+						</div>
+
 						<label for="calcFormMail">
 							Ваш email
 							<input type="email" name="calcFormMail" id="calcFormMail">
@@ -1675,7 +1762,6 @@
 						<div class="flexGroup">
 							<label for="sec10PCode">
 								Ваш телефон*
-								<!-- <select name="sec10PCode" id="sec10PCode" class="countrySelect"></select> -->
 								<div class="custom-dropdown">
 									<div class="dropdown-selected">
 										<img class="selected-flag" src="" alt=""
@@ -1740,7 +1826,7 @@
 			<div class="container containerF">
 				<div class="fWel">Ми будемо раді зустрітися з вами в нашому офісі у Чангу, Балі!</div>
 				<div class="flexCenter">
-					<a href="#" class="btn btn_gr">Відвідати офіс</a>
+					<span class="btn btn_gr" id="visitOfficeFormSubmit">Відвідати офіс</span>
 				</div>
 				<div class="fLogo">
 					<img src="img/logo-b.png?v=1.0.1" alt="Logo">
@@ -2070,6 +2156,29 @@
 					(!headForm.contains(event.target) && event.target !== headFormSubmit)
 				) {
 					headForm.classList.remove('investWithUsActive');
+				}
+			};
+
+			closeHeadForm.addEventListener('click', removeHeadFormActive);
+			document.addEventListener('click', removeHeadFormActive);
+		});
+
+		// Visit Office form
+		document.addEventListener('DOMContentLoaded', () => {
+			const headFormSubmit = document.getElementById('visitOfficeFormSubmit');
+			const headForm = document.getElementById('visitOfficeForm');
+			const closeHeadForm = document.querySelector('.closeVisitOfficeForm');
+
+			headFormSubmit.addEventListener('click', () => {
+				headForm.classList.add('visitOfficeActive');
+			});
+
+			const removeHeadFormActive = (event) => {
+				if (
+					event.target === closeHeadForm ||
+					(!headForm.contains(event.target) && event.target !== headFormSubmit)
+				) {
+					headForm.classList.remove('visitOfficeActive');
 				}
 			};
 

@@ -1305,11 +1305,11 @@ i {
     outline: none;
     border: none;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     z-index: 3;
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     background: url(../img/close.png);
 }
 
@@ -1690,7 +1690,7 @@ i {
     justify-content: center;
     position: relative;
     width: -webkit-fill-available;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 .invAllRow {
@@ -1941,6 +1941,7 @@ button.invInfo {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 90px;
 }
 
 .fLogo img {
@@ -1961,7 +1962,7 @@ button.invInfo {
 }
 
 .fWel {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 24px;
 }
 
@@ -2149,6 +2150,7 @@ select option {
     font-size: 20px;
 }
 
+.closeVisitOfficeForm,
 .closeProductionProcessForm,
 .closeInvestWithUsForm,
 .closeMainReasonsForm,
@@ -2166,6 +2168,7 @@ select option {
     right: 10px;
 }
 
+.visitOfficeForm,
 .productionProcessForm,
 .investWithUsForm,
 .mainReasonsForm,
@@ -2176,6 +2179,7 @@ select option {
     display: none;
 }
 
+.visitOfficeActive,
 .productionProcessActive,
 .investWithUsActive,
 .mainReasonsFormActive,
