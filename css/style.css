@@ -2585,6 +2585,7 @@ select option {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
 }
 
 .followUsList {
