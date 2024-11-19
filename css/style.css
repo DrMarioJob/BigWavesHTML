@@ -134,7 +134,12 @@ body {
     font-size: 18px;
     background: #252526;
     color: #fff;
-    /* min-height: 6000px; */
+}
+
+.mainHome {
+    max-width: 564px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .logo img {
