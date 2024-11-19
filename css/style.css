@@ -137,6 +137,10 @@ body {
     /* min-height: 6000px; */
 }
 
+.logo img {
+    width: 75px;
+}
+
 .owl-dots {
     display: flex !important;
     z-index: 1;
