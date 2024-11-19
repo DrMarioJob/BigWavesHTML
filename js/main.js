@@ -1,11 +1,13 @@
 // Mobile nav
 document.querySelector('.navMbutton').addEventListener('click', () => {
     document.querySelector('.navListMenu').classList.toggle('navListMenuActive');
+    document.querySelector('.navMbutton').classList.toggle('navMbuttonActive');
 });
 
 // Lang
 document.querySelector('.navLang').addEventListener('click', () => {
     document.querySelector('.navLangList').classList.toggle('navLangListActive');
+    document.querySelector('.navLang').classList.toggle('navLangActive');
 });
 
 // Media modal

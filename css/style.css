@@ -186,13 +186,27 @@ body {
     flex-direction: column;
     gap: 9px;
     cursor: pointer;
+    position: relative;
 }
 
 .navMbutton span {
     display: block;
     width: 40px;
-    height: 3px;
+    height: 2px;
     background: #fff;
+    transition: all .3s ease;
+}
+
+.navMbuttonActive span:nth-child(2) {
+    display: none;
+}
+
+.navMbuttonActive span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 0);
+}
+
+.navMbuttonActive span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, 0);
 }
 
 .navMedia {
@@ -227,12 +241,19 @@ body {
 }
 
 .navListMenu {
-    display: none;
     background: #252526;
     position: fixed;
     right: 0;
     top: 60px;
     z-index: 20;
+    transition: max-height .3s linear;
+    max-height: 0;
+    overflow: hidden;
+    width: -webkit-fill-available;
+}
+
+.navListMenuActive {
+    max-height: 500px;
 }
 
 .navListMenu a {
@@ -240,9 +261,14 @@ body {
     color: #fff;
     display: block;
     padding: 0 20px;
-    line-height: 40px;
+    line-height: 25px;
     text-align: center;
+    transition: all .3s ease;
     border-bottom: 1px solid rgba(59, 61, 63, 0.6);
+}
+
+.navListMenuActive a {
+    line-height: 40px;
 }
 
 .navLangList a {
@@ -259,21 +285,20 @@ body {
     border-bottom: none;
 }
 
-.navListMenuActive {
-    display: block;
-}
-
 .navLangList {
-    display: none;
     background: #252526;
     position: fixed;
     top: 60px;
     left: 0;
     z-index: 20;
+    transition: max-height .3s linear;
+    max-height: 0;
+    overflow: hidden;
+    width: -webkit-fill-available;
 }
 
 .navLangListActive {
-    display: block;
+    max-height: 100px;
 }
 
 .header {
