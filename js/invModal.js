@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.body.addEventListener("click", (event) => {
+        const activeModal = document.querySelector(".invModal.active");
+        if (activeModal && !event.target.closest(".invModal") && !event.target.closest(".invInfo")) {
+            activeModal.classList.remove("active");
+        }
+    });
+
     document.querySelectorAll(".invModal").forEach(modal => modal.classList.remove("active"));
 
     $(".owl-carousel").on('initialized.owl.carousel changed.owl.carousel', function () {

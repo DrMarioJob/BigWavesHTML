@@ -224,6 +224,11 @@ body {
     gap: 12px;
 }
 
+.navMedia a img {
+    fill: #00B0A4;
+    width: 24px;
+}
+
 .navLang {
     border: none;
     outline: none;
@@ -448,6 +453,7 @@ i {
     top: -100px;
     right: 0;
     animation: sway .3s ease infinite;
+    width: 80px;
 }
 
 .contBlock2 a b {
@@ -610,7 +616,7 @@ i {
 
 .prMainName1 span {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 800;
 }
 
@@ -677,7 +683,7 @@ i {
 
 .prMainStat div span:nth-child(2) {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .prMainStat div span:nth-child(1) {
@@ -767,7 +773,7 @@ i {
     background-size: cover;
 } */
 
-.prSwipe {
+/* .prSwipe {
     height: 10px;
     background: linear-gradient(to right, rgba(0, 177, 164, 0.6), rgba(0, 177, 164, 0.01));
     border-radius: 10px;
@@ -781,14 +787,13 @@ i {
     display: block;
     width: 43px;
     height: 45px;
-    /* border: 1px solid #fff; */
     position: absolute;
     top: -15px;
     left: 50%;
     transform: translate(-100%, 0);
     animation: prSwipeAnim 2s linear infinite;
     background: url(../img/swipe.png);
-}
+} */
 
 @keyframes prSwipeAnim {
     0% {
@@ -943,7 +948,7 @@ i {
 .aboutStatCol {
     font-weight: 800;
     color: #00B0A4;
-    font-size: 22px;
+    font-size: 19px;
     display: flex;
     flex-direction: column;
 }
@@ -1824,10 +1829,22 @@ button.invInfo {
     gap: 10px;
     text-align: center;
     z-index: 5;
-    border-top: 3px solid #00B0A4;
-    padding: 40px 7px 20px 7px;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 5px;
+    border-top: 2px solid #00B0A4;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    color: #333;
+}
+
+.invModal::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
 }
 
 .invModal.active {
@@ -2261,8 +2278,6 @@ select option {
 
 .secTitlePage span {
     color: #00B0A4;
-    border: 1px solid #00B0A4;
-    padding: 5px 10px;
     line-height: 0px;
 }
 
@@ -2767,4 +2782,70 @@ select option {
 
 .secOurTeam .prSwipe {
     margin-top: 50px;
+}
+
+.prCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.prCarousel {
+    position: relative;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    z-index: 10;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.owl-nav button span {
+    font-size: 60px;
+    font-weight: 200;
+    width: 20px;
+    height: 35px;
+    display: block;
+    line-height: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-nav button.owl-prev {
+    left: -10px;
+    top: -10px;
+    position: absolute;
+}
+
+.owl-nav button.owl-next {
+    right: -10px;
+    top: -10px;
+    position: absolute;
+}
+
+.owl-nav button:hover span {
+    color: #00B0A4;
+}
+
+.invInfo img {
+    width: 8px !important;
+}
+
+.mainMdWr a img {
+    width: 25px;
+}
+
+.invCarousel .invIco {
+    width: 80px !important;
+}
+
+.aboutCarousel .item {
+    padding: 0 20px 0 20px;
 }
