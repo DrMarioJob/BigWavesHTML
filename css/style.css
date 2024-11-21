@@ -3098,3 +3098,32 @@ select option {
 .pagination span {
     box-shadow: 0 0 0 2px #00B0A4;
 }
+
+.navLang span img {
+    width: 7px;
+}
+
+.suggestions {
+    position: absolute;
+    background: #202021;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    top: 72px;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+.relLabel {
+    position: relative;
+}
