@@ -99,6 +99,121 @@
             <div class="container">
                 <h3 class="secTitle secTitlePage">Переваги <span>співпраці з Big Waves</span></h3>
 
+                <div class="owl-carousel benefitsOfWorkingCl">
+                    <div class="item">
+                        <div class="teamOwlWr benefitsOfWorking">
+                            <div class="benefitsOfWorkingNum">
+                                1
+                            </div>
+                            <div class="teamOwl">
+                                <div class="teamOwl2">
+                                    <div class="teamOwl3">
+                                        <img src="img/bf-ico-1.svg" alt="Team">
+                                        <div class="teamOwl2Name">Наявність портфоліо каталогу</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="teamOwlWr benefitsOfWorking">
+                            <div class="benefitsOfWorkingNum">
+                                2
+                            </div>
+                            <div class="teamOwl">
+                                <div class="teamOwl2">
+                                    <div class="teamOwl3">
+                                        <img src="img/bf-ico-2.svg" alt="Team">
+                                        <div class="teamOwl2Name">Mаркетингові матеріали</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="teamOwlWr benefitsOfWorking">
+                            <div class="benefitsOfWorkingNum">
+                                3
+                            </div>
+                            <div class="teamOwl">
+                                <div class="teamOwl2">
+                                    <div class="teamOwl3">
+                                        <img src="img/bf-ico-3.svg" alt="Team">
+                                        <div class="teamOwl2Name">Безпроблемна оплата комісій</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="teamOwlWr benefitsOfWorking">
+                            <div class="benefitsOfWorkingNum">
+                                4
+                            </div>
+                            <div class="teamOwl">
+                                <div class="teamOwl2">
+                                    <div class="teamOwl3">
+                                        <img src="img/bf-ico-4.svg" alt="Team">
+                                        <div class="teamOwl2Name">Якісна підтримка</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="teamOwlWr benefitsOfWorking">
+                            <div class="benefitsOfWorkingNum">
+                                5
+                            </div>
+                            <div class="teamOwl">
+                                <div class="teamOwl2">
+                                    <div class="teamOwl3">
+                                        <img src="img/bf-ico-5.svg" alt="Team">
+                                        <div class="teamOwl2Name">Статус угоди</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionLine secHowToTetTtartedWaves" id="secHowToTetTtartedWaves">
+            <div class="container">
+                <h3 class="secTitle secTitlePage">Як почати працювати <span>з Big Waves</span></h3>
+                <div class="blockHowToTetTtartWr">
+                    <div class="blockHowToTetTtart">
+                        <div class="blockHowToTetTtartCol">
+                            <div class="blockHowToTetTtartRow"><span>1</span></div>
+                            <div class="blockHowToTetTtartRow">
+                                <img src="img/icon-contact-form.svg" alt="Ico">
+                                Заповнити<br>форму
+                            </div>
+                        </div>
+                        <img src="img/secHowToTetTtartedWaves.svg" class="secHowToTetTtartedWavesPic" alt="">
+                    </div>
+                    <div class="blockHowToTetTtart">
+                        <div class="blockHowToTetTtartCol">
+                            <div class="blockHowToTetTtartRow"><span>2</span></div>
+                            <div class="blockHowToTetTtartRow">
+                                <img src="img/icon-brochure.svg" alt="Ico">
+                                Отримати<br>промо<br>матеріали
+                            </div>
+                        </div>
+                        <img src="img/secHowToTetTtartedWaves.svg" class="secHowToTetTtartedWavesPic" alt="">
+                    </div>
+                    <div class="blockHowToTetTtart">
+                        <div class="blockHowToTetTtartCol">
+                            <div class="blockHowToTetTtartRow"><span>3</span></div>
+                            <div class="blockHowToTetTtartRow">
+                                <img src="img/icon-digital-signature.svg" alt="Ico">
+                                Підписати<br>угоду
+                            </div>
+                        </div>
+                        <img src="img/secHowToTetTtartedWaves.svg" class="secHowToTetTtartedWavesPic" alt="">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -119,15 +234,25 @@
                             Ваше ім'я*
                             <input type="text" name="sec10Name" id="sec10Name" required>
                         </label>
-                        <label for="sec10PCode">
-                            Ваш телефон*
-                            <select name="sec10PCode" id="sec10PCode" class="countrySelect">
 
-                            </select>
-                        </label>
-                        <label for="sec10Phone">
-                            <input type="text" name="sec10Phone" id="sec10Phone" required>
-                        </label>
+                        <div class="flexGroup">
+                            <label for="sec10PCode">
+                                Ваш телефон*
+                                <div class="custom-dropdown">
+                                    <div class="dropdown-selected">
+                                        <img class="selected-flag" src="" alt=""
+                                            style="width: 20px; height: 15px; margin-right: 10px; display: none;">
+                                        <span class="selected-text">Виберіть країну</span>
+                                    </div>
+                                    <div class="dropdown-options"></div>
+                                    <input type="hidden" name="selectedCountry[]" class="selectedCountry" value="">
+                                </div>
+                            </label>
+                            <label for="sec10Phone">
+                                <input type="text" name="sec10Phone" id="sec10Phone" required>
+                            </label>
+                        </div>
+
                         <label for="sec10Mail">
                             Ваш email
                             <input type="email" name="sec10Mail" id="sec10Mail">
@@ -200,10 +325,10 @@
     <script src="js/main.js?v=4.0.1"></script>
     <script>
         $(document).ready(function () {
-            $('.aboutCarousel').owlCarousel({
+            $('.benefitsOfWorkingCl').owlCarousel({
                 loop: true,
                 margin: 25,
-                nav: false,
+                nav: true,
                 autoplay: false,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: false,
@@ -222,36 +347,7 @@
         });
     </script>
 
-    <script>
-        async function loadCountryCodes() {
-            const selectElements = document.querySelectorAll('.countrySelect');
-
-            try {
-                const response = await fetch('https://restcountries.com/v3.1/all');
-                const countries = await response.json();
-
-                countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
-
-                selectElements.forEach(selectElement => {
-                    countries.forEach(country => {
-                        if (country.idd?.root && country.idd?.suffixes) {
-                            const countryCode = `${country.idd.root}${country.idd.suffixes[0]}`;
-                            const option = document.createElement('option');
-                            option.value = countryCode;
-                            option.innerHTML = `
-                        ${country.name.common} (${countryCode})
-                    `;
-                            selectElement.appendChild(option);
-                        }
-                    });
-                });
-            } catch (error) {
-                console.error('Ошибка загрузки данных о странах:', error);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', loadCountryCodes);
-    </script>
+    <script src="js/selectCountry.js"></script>
 </body>
 
 </html>

@@ -562,6 +562,11 @@ i {
     background-size: cover;
 }
 
+.secHowToTetTtartedWaves {
+    background: url(../img/secHowToTetTtartedWaves.jpg) top center no-repeat;
+    background-size: cover;
+}
+
 .secMainTarget {
     background: #3F4042;
 }
@@ -1117,7 +1122,7 @@ i {
 .baliStatTitle {
     font-weight: 800;
     /* text-transform: uppercase; */
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     align-items: start;
     color: #fff;
@@ -2848,4 +2853,129 @@ select option {
 
 .aboutCarousel .item {
     padding: 0 20px 0 20px;
+}
+
+.howBaliCarousel .item {
+    padding: 0 10px 0 10px;
+}
+
+.baliInvCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.invCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.teamCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.estateIndonesiaCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.partLogosCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.productionProcessCarousel .item {
+    padding: 0 20px 0 20px;
+}
+
+.estateIndonesiaList img {
+    width: 30px !important;
+}
+
+.teamVideo img {
+    width: 20px !important;
+}
+
+.partLogos img {
+    width: 150px !important;
+}
+
+.benefitsOfWorking .teamOwl3 img {
+    border-radius: 0;
+    width: 90px;
+}
+
+
+.benefitsOfWorking .teamOwl3 {
+    height: 220px !important;
+    width: 220px !important;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto !important;
+    border-radius: 100%;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(0, 176, 164, 0.99), rgba(0, 176, 164, 0.01));
+}
+
+.benefitsOfWorking .teamOwl2 {
+    text-align: center;
+    gap: 15px;
+}
+
+.benefitsOfWorkingNum {
+    border-radius: 50%;
+    border: 1px dashed #00B0A4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.blockHowToTetTtartWr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockHowToTetTtart {
+    width: 330px;
+    height: 330px;
+    /* background: url(../img/secHowToTetTtartedWaves.svg) center bottom no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+
+.secHowToTetTtartedWavesPic {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.blockHowToTetTtartCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blockHowToTetTtartRow span {
+    font-size: 230px;
+    font-weight: 800;
+    opacity: 0.3;
+}
+
+.blockHowToTetTtartRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blockHowToTetTtartRow img {
+    width: 90px;
+}
+
+.blockHowToTetTtartWr {
+    margin-top: 30px;
 }
