@@ -243,15 +243,11 @@ body {
     align-items: center;
 }
 
-.navLang span:nth-child(1) {
+.navLang span {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-.navLang span:nth-child(2) {
-    opacity: 0.5;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .navListMenu {
@@ -259,15 +255,17 @@ body {
     position: fixed;
     right: 0;
     top: 60px;
-    z-index: 20;
-    transition: max-height .3s linear;
-    max-height: 0;
+    z-index: 110;
+    transition: height .3s linear;
+    height: 0;
     overflow: hidden;
     width: -webkit-fill-available;
 }
 
 .navListMenuActive {
-    max-height: 500px;
+    /* max-height: 500px; */
+    height: 100%;
+    padding: 30px 0;
 }
 
 .navListMenu a {
@@ -276,13 +274,16 @@ body {
     display: block;
     padding: 0 20px;
     line-height: 25px;
-    text-align: center;
+    text-align: left;
     transition: all .3s ease;
-    border-bottom: 1px solid rgba(59, 61, 63, 0.6);
+    font-weight: 800;
+    opacity: 0;
+    /* border-bottom: 1px solid rgba(59, 61, 63, 0.6); */
 }
 
 .navListMenuActive a {
     line-height: 40px;
+    opacity: 1;
 }
 
 .navLangList a {
@@ -292,6 +293,7 @@ body {
     padding: 0 20px;
     line-height: 40px;
     text-align: center;
+    font-size: 14px;
     border-bottom: 1px solid rgba(59, 61, 63, 0.6);
 }
 
@@ -308,11 +310,12 @@ body {
     transition: max-height .3s linear;
     max-height: 0;
     overflow: hidden;
-    width: -webkit-fill-available;
+    width: auto;
+    border-radius: 0 0 10px 10px;
 }
 
 .navLangListActive {
-    max-height: 100px;
+    max-height: 200px;
 }
 
 .header {
@@ -371,7 +374,7 @@ i {
 
 .btn {
     border-radius: 10px;
-    font-weight: 800;
+    font-weight: 400;
     border: none;
     outline: none;
     text-decoration: none;
@@ -1406,7 +1409,7 @@ i {
 .balInvT {
     color: #00B0A4;
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 21px;
     line-height: 26px;
 }
@@ -1654,7 +1657,7 @@ i {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 16px;
+    font-size: 15px;
     width: -webkit-fill-available;
 }
 
@@ -2219,7 +2222,7 @@ select option {
 .closeAboutForm,
 .closeCalcForm,
 .closeheadForm {
-    background: url(../img/close.png) center no-repeat;
+    background: url(../img/close.svg) center no-repeat;
     width: 25px;
     height: 25px;
     border: none;
@@ -2512,12 +2515,14 @@ select option {
 }
 
 .partLogos {
-    background: #252526;
+    background: url(../img/secEstateIndonesia.jpg) #252526;
+    background-size: cover;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 110px;
+    border: 1px solid #3E3E3E;
 }
 
 .concretePlantWr {
@@ -3039,6 +3044,10 @@ select option {
     margin-bottom: 15px;
 }
 
+.newsDesc p {
+    margin: 15px 0;
+}
+
 .contWr {
     display: flex;
     flex-direction: column;
@@ -3050,11 +3059,16 @@ select option {
     font-weight: 800;
     font-size: 20px;
     color: #00B0A4;
+    text-align: center;
 }
 
 .contInfo {
     display: flex;
     gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
 .contInfo img {
@@ -3070,6 +3084,15 @@ select option {
 .contInfo a {
     text-decoration: none;
     color: #fff;
+}
+
+.contInfo button {
+    background: none;
+    outline: none;
+    color: #fff;
+    border: 1px solid #00B0A4;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .secPageContacts {
@@ -3126,4 +3149,31 @@ select option {
 
 .relLabel {
     position: relative;
+}
+
+.secTitleFlL {
+    text-align: center;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.formGroupLb2 {
+    text-align: left;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.sec10 .formGroupLb2 {
+    margin-top: 10px;
+}
+
+.modalQizForm i {
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+label i {
+    margin-top: 0 !important;
 }

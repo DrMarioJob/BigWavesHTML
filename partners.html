@@ -25,6 +25,77 @@
             </div>
         </div>
         <!-- Modal min -->
+        <!--Visit office us form -->
+        <div class="defForm visitOfficeForm" id="visitOfficeForm">
+            <button type="button" class="closeVisitOfficeForm"></button>
+            <form action="/">
+                <div class="defFormTitle">Заповніть форму, і наш менеджер зв'яжеться з вами для підтвердження часу
+                    візиту до офісу в Чангу.</div>
+                <label for="visitOfficeFormName">
+                    Ваше ім'я*
+                    <input type="text" name="visitOfficeFormName" id="visitOfficeFormName" required>
+                </label>
+
+                <div>
+                    <label for="sec10PCode" class="relLabel">
+                        Ваш телефон*
+                        <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
+                        <div class="phoneSuggestions suggestions"></div>
+                    </label>
+                </div>
+
+                <label for="visitOfficeFormMail">
+                    Ваш email
+                    <input type="email" name="visitOfficeFormMail" id="visitOfficeFormMail">
+                </label>
+
+                <i>Оберіть зручний для вас месенджер</i>
+
+                <div class="formGroup">
+                    <div class="formGroupWr">
+                        <label for="visitOfficeFormMediaWApp" class="formGroupLb">
+                            <input type="radio" name="visitOfficeFormMedia" value="WhatsApp"
+                                id="visitOfficeFormMediaWApp" checked>
+                            <span class="formGroupOw"></span>
+                            <i>WhatsApp</i>
+                        </label>
+                        <label for="visitOfficeFormMediaTg" class="formGroupLb">
+                            <input type="radio" name="visitOfficeFormMedia" value="Telegram"
+                                id="visitOfficeFormMediaTg">
+                            <span class="formGroupOw"></span>
+                            <i>Telegram</i>
+                        </label>
+
+                    </div>
+                    <div class="formGroupWr">
+                        <label for="visitOfficeFormAction1" class="formGroupLb">
+                            <input type="radio" name="visitOfficeFormAction" value="Передзвонити"
+                                id="visitOfficeFormAction1" checked>
+                            <span class="formGroupOw"></span>
+                            <i>Передзвонити</i>
+                        </label>
+                        <label for="visitOfficeFormAction2" class="formGroupLb">
+                            <input type="radio" name="visitOfficeFormAction" value="Написати"
+                                id="visitOfficeFormAction2">
+                            <span class="formGroupOw"></span>
+                            <i>Написати</i>
+                        </label>
+                    </div>
+                </div>
+                <label for="formUserName" class="formGroupLb formGroupLb2">
+                    Ваш юзернейм
+                    <input type="text" name="formUserName" value="" id="formUserName">
+                </label>
+                <div class="flexCenter">
+                    <button type="submit" name="ivisitOfficeFormBtn" class="btn btn_gr">Відправити</button>
+                </div>
+                <i class="qizBtnT">
+                    Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+                    погоджуєтеся з нашою політикою конфіденційності.
+                </i>
+            </form>
+        </div>
+        <!-- Visit office form -->
 
         <header class="header headerPage">
             <nav class="mainNav">
@@ -60,6 +131,8 @@
                 <a href="#">Контакти</a>
             </div>
             <div class="navLangList">
+                <a href="#">UA</a>
+                <a href="#">RU</a>
                 <a href="#">EN</a>
             </div>
         </header>
@@ -181,7 +254,7 @@
 
         <section class="section sectionLine secHowToTetTtartedWaves" id="secHowToTetTtartedWaves">
             <div class="container">
-                <h3 class="secTitle secTitlePage">Як почати працювати <span>з Big Waves</span></h3>
+                <h3 class="secTitle secTitlePage">Як почати працювати <br><span>з Big Waves</span></h3>
                 <div class="blockHowToTetTtartWr">
                     <div class="blockHowToTetTtart">
                         <div class="blockHowToTetTtartCol">
@@ -256,16 +329,17 @@
 
                         <div class="formGroup formGroupQiz">
                             <div class="formGroupWr">
-                                <label for="formSec10" class="formGroupLb">
-                                    <input type="radio" name="sec10Media" value="Telegram" id="formSec10" checked>
-                                    <span class="formGroupOw"></span>
-                                    <i>Telegram</i>
-                                </label>
                                 <label for="formSec11" class="formGroupLb">
-                                    <input type="radio" name="sec10Media" value="WhatsApp" id="formSec11">
+                                    <input type="radio" name="sec10Media" value="WhatsApp" id="formSec11" checked>
                                     <span class="formGroupOw"></span>
                                     <i>WhatsApp</i>
                                 </label>
+                                <label for="formSec10" class="formGroupLb">
+                                    <input type="radio" name="sec10Media" value="Telegram" id="formSec10">
+                                    <span class="formGroupOw"></span>
+                                    <i>Telegram</i>
+                                </label>
+
                             </div>
                             <div class="formGroupWr">
                                 <label for="formSec12" class="formGroupLb">
@@ -280,6 +354,10 @@
                                 </label>
                             </div>
                         </div>
+                        <label for="formUserName" class="formGroupLb formGroupLb2">
+                            Ваш юзернейм
+                            <input type="text" name="formUserName" value="" id="formUserName">
+                        </label>
                         <div class="flexCenter">
                             <button type="submit" class="btn btn_gr">Отримати бонус</button>
                         </div>
@@ -296,7 +374,7 @@
             <div class="container containerF">
                 <div class="fWel">Ми будемо раді зустрітися з вами в нашому офісі у Чангу, Балі!</div>
                 <div class="flexCenter">
-                    <a href="#" class="btn btn_gr">Відвідати офіс</a>
+                    <span class="btn btn_gr" id="visitOfficeFormSubmit">Відвідати офіс</span>
                 </div>
                 <div class="fLogo">
                     <img src="img/Logo.svg" alt="Logo">
@@ -334,6 +412,30 @@
                     }
                 }
             })
+        });
+    </script>
+    <script>
+        // Visit Office form
+        document.addEventListener('DOMContentLoaded', () => {
+            const headFormSubmit = document.getElementById('visitOfficeFormSubmit');
+            const headForm = document.getElementById('visitOfficeForm');
+            const closeHeadForm = document.querySelector('.closeVisitOfficeForm');
+
+            headFormSubmit.addEventListener('click', () => {
+                headForm.classList.add('visitOfficeActive');
+            });
+
+            const removeHeadFormActive = (event) => {
+                if (
+                    event.target === closeHeadForm ||
+                    (!headForm.contains(event.target) && event.target !== headFormSubmit)
+                ) {
+                    headForm.classList.remove('visitOfficeActive');
+                }
+            };
+
+            closeHeadForm.addEventListener('click', removeHeadFormActive);
+            document.addEventListener('click', removeHeadFormActive);
         });
     </script>
 

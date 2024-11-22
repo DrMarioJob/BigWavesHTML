@@ -66,38 +66,51 @@
             </div>
         </header>
 
-        <section class="section sec3 secPageContacts" id="sec3">
+        <section class="section sec3 secPageNews" id="sec3">
             <div class="container">
-                <h3 class="secTitle">Контакти</h3>
+                <h3 class="secTitle">Новини</h3>
 
-                <div class="pagePartnersWr">
-                    <div class="pagePartnersPic">
-                        <img src="img/contact.jpg" alt="Part">
-                        <span class="qizPicLine1"></span>
-                    </div>
-                    <div class="contWr">
-                        <div class="contTitle">Місцезнаходження нашого офісу:</div>
-                        <div class="contloc contInfo">
-                            <img src="img/pin.svg" alt="Ico"><a
-                                href="https://maps.app.goo.gl/ZV6X35AH7WiSztXM7?g_st=com.google.maps.preview.copy"
-                                target="_blank">Berawa, Canggu</a>
+                <div class="newsWr">
+                    <article class="news">
+                        <div class="newsPic">
+                            <div class="newsPub">Дата публікації: 2024.10.11</div>
+                            <img src="img/news-art.jpg" alt="News">
                         </div>
-                        <div class="contTel contInfo">
-                            <img src="img/whatsapp.svg" alt="Ico">
-                            <a href="https://wa.me/+6285190128083">+6285190128083</a>
-                            <button onclick="copyText(this)">Копіювати</button>
+                        <div class="newsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти приваблюють
+                            інвесторів</div>
+                        <div class="newsLine">
+                            <img src="img/news-line.png" alt="Line">
                         </div>
-                    </div>
-                    <div class="contTg contInfo">
-                        <img src="img/telegram.svg" alt="Ico">
-                        <a href="https://t.me/roman_bigwaves" target="_blank">@roman_bigwaves</a>
-                        <button onclick="copyText(this)">Копіювати</button>
-                    </div>
+                        <div class="newsDesc">
+                            <p>
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення інфраструктури та
+                                залучення інвестицій. Основний акцент робиться на створенні нових туристичних об'єктів,
+                                готелів, курортів, а також покращенні дорожньої інфраструктури.
+                            </p>
+                            <p>
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення інфраструктури та
+                                залучення інвестицій. Основний акцент робиться на створенні нових туристичних об'єктів,
+                                готелів, курортів, а також покращенні дорожньої інфраструктури.На острові Балі триває
+                                масштабне будівництво,
+                                спрямоване на покращення інфраструктури та
+                                залучення інвестицій. Основний акцент робиться на створенні нових туристичних об'єктів,
+                                готелів, курортів, а також покращенні дорожньої інфраструктури.На острові Балі триває
+                                масштабне будівництво,
+                                спрямоване на покращення інфраструктури та
+                                залучення інвестицій. Основний акцент робиться на створенні нових туристичних об'єктів,
+                                готелів, курортів, а також покращенні дорожньої інфраструктури.
+                            </p>
+                            <p>
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення інфраструктури та
+                                залучення інвестицій. Основний акцент робиться на створенні нових туристичних об'єктів,
+                                готелів, курортів, а також покращенні дорожньої інфраструктури.
+                            </p>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-            </div>
         </section>
-
 
         <section class="section sec10" id="sec10">
             <div class="container">
@@ -193,22 +206,34 @@
     </main>
 
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/fancyBox-3.0.47.js"></script>
     <script src="js/main.js?v=4.0.1"></script>
-    <script src="js/selectCountry.js"></script>
-
     <script>
-        function copyText(button) {
-            const textToCopy = button.previousElementSibling.textContent;
-            navigator.clipboard.writeText(textToCopy)
-                .then(() => {
-                    button.textContent = "Скопійовано!";
-                    setTimeout(() => button.textContent = "Копіювати", 2000);
-                })
-                .catch(err => {
-                    console.error('Помилка: ', err);
-                });
-        }
+        $(document).ready(function () {
+            $('.benefitsOfWorkingCl').owlCarousel({
+                loop: true,
+                margin: 25,
+                nav: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
     </script>
+
+    <script src="js/selectCountry.js"></script>
 </body>
 
 </html>
