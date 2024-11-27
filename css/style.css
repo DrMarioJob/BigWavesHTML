@@ -241,6 +241,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     align-items: center;
+    position: relative;
 }
 
 .navLang span {
@@ -263,8 +264,11 @@ body {
 }
 
 .navListMenuActive {
-    /* max-height: 500px; */
     height: 100%;
+
+}
+
+.navListRow {
     padding: 30px 0;
 }
 
@@ -273,16 +277,15 @@ body {
     color: #fff;
     display: block;
     padding: 0 20px;
-    line-height: 25px;
+    line-height: 40px;
     text-align: left;
     transition: all .3s ease;
     font-weight: 800;
     opacity: 0;
-    /* border-bottom: 1px solid rgba(59, 61, 63, 0.6); */
 }
 
 .navListMenuActive a {
-    line-height: 40px;
+
     opacity: 1;
 }
 
@@ -303,9 +306,10 @@ body {
 
 .navLangList {
     background: #252526;
-    position: fixed;
-    top: 60px;
-    left: 0;
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 20;
     transition: max-height .3s linear;
     max-height: 0;
@@ -1037,14 +1041,14 @@ i {
 
 .formTitle {
     margin: 30px 0 20px 0;
-    font-weight: 800;
+    /* font-weight: 800; */
     /* text-transform: uppercase; */
     font-size: 22px;
     color: #00B0A4;
 }
 
 .formGroup {
-    font-weight: 800;
+    /* font-weight: 800; */
     font-size: 15px;
 }
 
@@ -1104,7 +1108,7 @@ i {
 }
 
 .sec5 .secTitle {
-    font-weight: 800;
+    /* font-weight: 800; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1205,6 +1209,7 @@ i {
     gap: 10px;
     font-size: 15px;
     align-items: center;
+    justify-content: center;
     line-height: 21px;
     border-left: 2px solid #9C9C9C;
     border-right: 2px solid #9C9C9C;
@@ -1212,6 +1217,7 @@ i {
     border-top: 2px solid #00B0A4;
     padding: 10px;
     text-align: center;
+    min-height: 202px;
 }
 
 .baliStarCol1 {
@@ -1357,12 +1363,20 @@ i {
     outline: none;
     border: none;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     z-index: 3;
     width: 25px;
     height: 25px;
-    background: url(../img/close.png);
+    padding: 0;
+    background: none;
+    display: none;
+    /* background: url(../img/close.png); */
+}
+
+.represBaliBlockCl svg {
+    width: 30px;
+    opacity: 0.5;
 }
 
 .represBaliBlock {
@@ -1391,11 +1405,11 @@ i {
 
 .balGr {
     color: #00B0A4;
-    font-weight: 800;
+    /* font-weight: 800; */
 }
 
 .secTitleFl1 {
-    font-weight: 800;
+    /* font-weight: 800; */
 }
 
 .baliInvWr {
@@ -1408,7 +1422,7 @@ i {
 
 .balInvT {
     color: #00B0A4;
-    font-weight: 800;
+    /* font-weight: 800; */
     /* text-transform: uppercase; */
     font-size: 21px;
     line-height: 26px;
@@ -1437,7 +1451,7 @@ i {
     width: 45%;
     height: 2px;
     top: -5px;
-    right: -5px;
+    right: 0;
     background: linear-gradient(to left, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
 }
 
@@ -1453,13 +1467,13 @@ i {
     width: 45%;
     height: 2px;
     bottom: -3px;
-    right: -5px;
+    right: 0;
     background: linear-gradient(to left, rgba(0, 176, 164, 0.9), rgba(0, 176, 164, 0.01));
 }
 
 .bqLine {
     line-height: 24px;
-    font-weight: 800;
+    /* font-weight: 800; */
     padding: 10px;
     font-size: 16px;
     position: relative;
@@ -1806,7 +1820,7 @@ button.invInfo {
 }
 
 .invAllRowTitle {
-    font-weight: 800;
+    /* font-weight: 800; */
     color: #00B0A4;
     text-align: center;
     font-size: 24px;
@@ -1845,7 +1859,7 @@ button.invInfo {
     border-top: 2px solid #00B0A4;
     padding: 10px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     color: #333;
 }
 
@@ -1906,7 +1920,7 @@ button.invInfo {
 }
 
 .bcTitle {
-    font-weight: 800;
+    /* font-weight: 800; */
 }
 
 .bcImg {
@@ -1989,7 +2003,7 @@ button.invInfo {
 .sec10T {
     margin-top: 25px;
     text-align: center;
-    font-weight: 800;
+    /* font-weight: 800; */
     line-height: 24px;
     margin-bottom: 25px;
 }
@@ -2487,6 +2501,7 @@ select option {
 
 .estateIndonesiaT {
     font-size: 20px;
+    font-weight: 400;
 }
 
 .estateIndonesiaT span {
@@ -2544,7 +2559,7 @@ select option {
 
 .concretePlantT {
     font-size: 20px;
-    font-weight: 800;
+    /* font-weight: 800; */
     color: #00B0A4;
     text-align: center;
 }
@@ -3056,7 +3071,7 @@ select option {
 }
 
 .contTitle {
-    font-weight: 800;
+    /* font-weight: 800; */
     font-size: 20px;
     color: #00B0A4;
     text-align: center;
@@ -3077,7 +3092,7 @@ select option {
 
 .contTel,
 .contTg {
-    font-weight: 800;
+    /* font-weight: 800; */
     font-size: 26px;
 }
 
@@ -3090,9 +3105,17 @@ select option {
     background: none;
     outline: none;
     color: #fff;
-    border: 1px solid #00B0A4;
-    padding: 5px 10px;
+    border: none;
+    padding: 0;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contInfo button svg {
+    width: 25px;
+    fill: #00B0A4;
 }
 
 .secPageContacts {
@@ -3176,4 +3199,32 @@ select option {
 
 label i {
     margin-top: 0 !important;
+}
+
+.represBaliBlock {
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    z-index: 5;
+    border-top: 2px solid #00B0A4;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 20px;
+    color: #333;
+}
+
+.represBaliBlock::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
 }
