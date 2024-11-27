@@ -427,9 +427,11 @@ i {
 .contBlock1 {
     font-size: 13px;
     padding: 10px;
+    padding-right: 0;
     line-height: 18px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .containerF2 {
@@ -978,6 +980,9 @@ i {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutStatCol span {
@@ -1261,6 +1266,7 @@ i {
 .represBaliRow {
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 .represBaliCol {
@@ -1866,12 +1872,11 @@ button.invInfo {
 .invModal::after {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-top: 20px solid #fff;
-    border-right: 20px solid transparent;
+    bottom: -1px;
+    left: -12px;
+    width: 25px;
+    height: 32px;
+    background: url(../img/mesArrow2.svg) center no-repeat;
 }
 
 .invModal.active {
@@ -2460,8 +2465,8 @@ select option {
 }
 
 .teamOwl2Name {
-    font-weight: 800;
-    font-size: 20px;
+    /* font-weight: 800; */
+    font-size: 18px;
 }
 
 .teamVideo {
@@ -3050,13 +3055,17 @@ select option {
 .newsTitle {
     line-height: 24px;
     font-size: 20px;
-    font-weight: 800;
+    /* font-weight: 800; */
 }
 
 .newsDesc {
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 15px;
+}
+
+.newsDesc iframe {
+    width: 100%;
 }
 
 .newsDesc p {
@@ -3205,14 +3214,16 @@ label i {
     position: relative;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, 0);
     display: none;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     z-index: 5;
     border-top: 2px solid #00B0A4;
-    padding: 10px 30px;
+    padding: 10px;
     background: #fff;
     border-radius: 20px;
     color: #333;
@@ -3221,10 +3232,23 @@ label i {
 .represBaliBlock::after {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-top: 20px solid #fff;
-    border-right: 20px solid transparent;
+    bottom: -1px;
+    left: -12px;
+    width: 25px;
+    height: 32px;
+    background: url(../img/mesArrow2.svg) center no-repeat;
+}
+
+.highlighted {
+    color: #00B0A4 !important;
+    transition: color 1s ease;
+    text-decoration: underline !important;
+}
+
+.hideUserName {
+    display: none !important;
+}
+
+.hideUserNameActive {
+    display: flex !important;
 }

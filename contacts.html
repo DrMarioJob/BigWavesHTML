@@ -82,11 +82,11 @@
                         <div class="contloc contInfo">
                             <img src="img/pin.svg" alt="Ico"><a
                                 href="https://maps.app.goo.gl/ZV6X35AH7WiSztXM7?g_st=com.google.maps.preview.copy"
-                                target="_blank">Berawa, Canggu</a>
+                                target="_blank">Berawa, Canggu, Bali</a>
                         </div>
                         <div class="contTel contInfo">
                             <img src="img/whatsapp.svg" alt="Ico">
-                            <a href="https://wa.me/+6285190128083">+6285190128083</a>
+                            <a href="https://wa.me/+6285190128083" id="text-to-copy">+6285190128083</a>
                             <button onclick="copyText(this)">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <title>content-copy</title>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="contTg contInfo">
                         <img src="img/telegram.svg" alt="Ico">
-                        <a href="https://t.me/roman_bigwaves" target="_blank">@roman_bigwaves</a>
+                        <a href="https://t.me/roman_bigwaves" target="_blank" id="text-to-copy">@roman_bigwaves</a>
                         <button onclick="copyText(this)">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <title>content-copy</title>
@@ -115,14 +115,14 @@
 
         <section class="section sec10" id="sec10">
             <div class="container">
-                <h3 class="secTitle">Якщо ви дійшли до цього місця, це означає, що вам цікаві наші проєкти</h3>
+                <h3 class="secTitle">Допоможемо знайти прибуткову нерухомість на Балі!</h3>
                 <div class="qizPic sec10Pic">
                     <span class="qizPicLine1"></span>
                     <img src="img/sec10-pic.jpg?v=1.0.1" alt="Pic">
                     <span class="qizPicLine2"></span>
                 </div>
                 <div class="sec10T">
-                    Заповніть форму і отримайте спеціальний бонус
+                    Заповніть форму, і ми зв’яжемося з вами найближчим часом!
                 </div>
                 <form action="/">
                     <div class="modalQizForm">
@@ -213,9 +213,17 @@
     <script>
         function copyText(button) {
             const textToCopy = button.previousElementSibling;
-            navigator.clipboard.writeText(textToCopy)
+
+            navigator.clipboard.writeText(textToCopy.textContent)
+                .then(() => {
+                    textToCopy.classList.add('highlighted');
+
+                    setTimeout(() => {
+                        textToCopy.classList.remove('highlighted');
+                    }, 1500);
+                })
                 .catch(err => {
-                    console.error('Помилка: ', err);
+                    console.error('Ошибка: ', err);
                 });
         }
     </script>
