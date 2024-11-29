@@ -3386,3 +3386,37 @@ label i {
 .moonTabsWrapperBtn2 button.active {
     border-color: #00B0A4;
 }
+
+.moonCarouselDots {
+    display: flex;
+    gap: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.moonCarouselDots button {
+    background: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    border: 2px solid #2D2C2A;
+    display: flex;
+    opacity: 0.6;
+}
+
+.moonCarouselDots button.active {
+    border-color: #00B0A4;
+    opacity: 1;
+}
+
+
+.moonCarouselSlideItem {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.moonCarouselSlideItem.active {
+    display: flex;
+    opacity: 1;
+}

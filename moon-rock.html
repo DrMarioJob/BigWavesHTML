@@ -201,7 +201,30 @@
                                 data-target="moonTabsCont2-1">Планували</button>
                             <button type="button" class="moonTabBtn2" data-target="moonTabsCont2-2">Зробили</button>
                         </div>
-                        <div class="moonTabContent2 active" id="moonTabsCont2-1">1</div>
+                        <div class="moonTabContent2 active" id="moonTabsCont2-1">
+                            <!-- Carousel -->
+                            <div class="moonCarouselDots">
+                                <button type="button" class="moonCarouselBtn active" data-target="0">
+                                    <img src="img/moonCarouser/1.jpg" alt="Ico">
+                                </button>
+                                <button type="button" class="moonCarouselBtn" data-target="1">
+                                    <img src="img/moonCarouser/2.jpg" alt="Ico">
+                                </button>
+                                <button type="button" class="moonCarouselBtn" data-target="2">
+                                    <img src="img/moonCarouser/3.jpg" alt="Ico">
+                                </button>
+                                <button type="button" class="moonCarouselBtn" data-target="3">
+                                    <img src="img/moonCarouser/4.jpg" alt="Ico">
+                                </button>
+                            </div>
+                            <div class="moonCarouselSlide">
+                                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
+                                </div>
+                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
+                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
+                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
+                            </div>
+                        </div>
                         <div class="moonTabContent2" id="moonTabsCont2-2">2</div>
                     </div>
                     <div class="moonTabContent" id="moonTabsCont-2">2</div>
@@ -397,6 +420,30 @@
                     if (targetContent) {
                         targetContent.classList.add("active");
                     }
+                });
+            });
+        });
+
+        // Slider 1
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".moonCarouselBtn");
+            const slides = document.querySelectorAll(".moonCarouselSlideItem");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const targetIndex = button.dataset.target;
+
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    slides.forEach(slide => {
+                        slide.classList.remove("active");
+                        slide.style.opacity = "0";
+                    });
+
+                    button.classList.add("active");
+                    slides[targetIndex].classList.add("active");
+                    setTimeout(() => {
+                        slides[targetIndex].style.opacity = "1";
+                    }, 50);
                 });
             });
         });
