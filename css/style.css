@@ -403,6 +403,11 @@ i {
     border-bottom: 5px solid #00968D;
 }
 
+.btn_gr2 {
+    background: none;
+    border: 2px solid #00968D;
+}
+
 .btn_dk {
     background: #9F9FA0;
     border-bottom: 5px solid #8A8A8B;
@@ -503,6 +508,11 @@ i {
 
 .sec3 {
     background: url(../img/about.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.secPageMoon {
+    background: url(../img/moon-bg.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -3251,4 +3261,128 @@ label i {
 
 .hideUserNameActive {
     display: flex !important;
+}
+
+.secPageMoon {
+    padding-top: 60px !important;
+}
+
+.secPageMoon .pagePartnersPic {
+    padding: 0;
+}
+
+.secPageMoon .pagePartnersPic img {
+    border-radius: 0;
+}
+
+.moonBtnWr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.moonStatWr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.pageMoonRDesc {
+    text-align: center;
+}
+
+.moonStat b {
+    font-weight: 800;
+    font-size: 30px;
+    border-bottom: 2px solid #00B0A4;
+}
+
+.moonStatFl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secMoonPlansWr {
+    background: url(../img/secMoonPlansWr.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.moonTabsWrapperBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.moonTabBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+
+.moonTabBtn b {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.spanRd {
+    color: #ff3c00;
+}
+
+.spanGr {
+    color: #00B0A4;
+}
+
+.moonTabBtn.active img {
+    border-radius: 50%;
+    animation: calcBtnAnim 3s ease infinite;
+}
+
+@keyframes calcBtnAnim {
+    0% {
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.01);
+    }
+}
+
+.moonTabContent2,
+.moonTabContent {
+    display: none;
+}
+
+.moonTabContent2.active,
+.moonTabContent.active {
+    display: block;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.moonTabsWrapperBtn2 button {
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 400 !important;
+    border: 2px solid #2D2C2A;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.moonTabsWrapperBtn2 button.active {
+    border-color: #00B0A4;
 }
