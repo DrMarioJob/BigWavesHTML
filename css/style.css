@@ -3358,11 +3358,13 @@ label i {
     }
 }
 
+.moonTabContent3,
 .moonTabContent2,
 .moonTabContent {
     display: none;
 }
 
+.moonTabContent3.active,
 .moonTabContent2.active,
 .moonTabContent.active {
     display: block;
