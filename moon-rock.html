@@ -2,510 +2,603 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="img/favicon.png?v=1.0.1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Waves</title>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css?v=4.0.3">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="img/favicon.png?v=1.0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Waves</title>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css?v=4.0.3">
 </head>
 
 <body class="pageAbout">
-    <main class="mainHome">
-        <!-- Modal min -->
-        <div class="modalBody">
-            <div class="modalBodyBtn">
-                <a href="#sec1" class="btn btn_gr bordrR">Вибрати юнiт</a>
-                <span class="btn btn_gr bordrL selectMd">Замовити дзвiнок</span>
-            </div>
-            <div class="mainMdWr" id="mainMd">
-                <a href="#" target="_blank"><img src="img/whatsapp.svg" alt="Ico"></a>
-                <a href="#" target="_blank"><img src="img/telegram.svg" alt="Ico"></a>
-            </div>
-        </div>
-        <!-- Modal min -->
-        <!-- Head form -->
-        <div class="defForm headForm" id="headForm">
-            <button type="button" class="closeheadForm"></button>
-            <form action="/">
-                <div class="defFormTitle">Як з вами зв’язатися?</div>
-                <label for="headFormName">
-                    Ваше ім'я*
-                    <input type="text" name="headFormName" id="headFormName" required>
-                </label>
+  <main class="mainHome">
+    <!-- Modal min -->
+    <div class="modalBody">
+      <div class="modalBodyBtn">
+        <a href="#sec1" class="btn btn_gr bordrR">Вибрати юнiт</a>
+        <span class="btn btn_gr bordrL selectMd">Замовити дзвiнок</span>
+      </div>
+      <div class="mainMdWr" id="mainMd">
+        <a href="#" target="_blank"><img src="img/whatsapp.svg" alt="Ico"></a>
+        <a href="#" target="_blank"><img src="img/telegram.svg" alt="Ico"></a>
+      </div>
+    </div>
+    <!-- Modal min -->
+    <!-- Head form -->
+    <div class="defForm headForm" id="headForm">
+      <button type="button" class="closeheadForm"></button>
+      <form action="/">
+        <div class="defFormTitle">Як з вами зв’язатися?</div>
+        <label for="headFormName">
+          Ваше ім'я*
+          <input type="text" name="headFormName" id="headFormName" required>
+        </label>
 
+        <div>
+          <label for="sec10PCode" class="relLabel">
+            Ваш телефон*
+            <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
+            <div class="phoneSuggestions suggestions"></div>
+          </label>
+        </div>
+
+        <label for="headFormMail">
+          Ваш email
+          <input type="email" name="headFormMail" id="headFormMail">
+        </label>
+
+        <i>Оберіть зручний для вас месенджер</i>
+
+        <div class="formGroup">
+          <div class="formGroupWr">
+            <label for="headFormMediaWApp" class="formGroupLb">
+              <input type="radio" name="sheadFormMedia" value="WhatsApp" id="headFormMediaWApp" checked>
+              <span class="formGroupOw"></span>
+              <i>WhatsApp</i>
+            </label>
+            <label for="headFormMediaTg" class="formGroupLb">
+              <input type="radio" name="sheadFormMedia" value="Telegram" id="headFormMediaTg">
+              <span class="formGroupOw"></span>
+              <i>Telegram</i>
+            </label>
+          </div>
+          <div class="formGroupWr">
+            <label for="headFormAction1" class="formGroupLb">
+              <input type="radio" name="headFormAction" value="Передзвонити" id="headFormAction1" checked>
+              <span class="formGroupOw"></span>
+              <i>Передзвонити</i>
+            </label>
+            <label for="headFormAction2" class="formGroupLb">
+              <input type="radio" name="headFormAction" value="Написати" id="headFormAction2">
+              <span class="formGroupOw"></span>
+              <i>Написати</i>
+            </label>
+          </div>
+        </div>
+        <label for="formUserName" class="formGroupLb formGroupLb2">
+          Ваш юзернейм
+          <input type="text" name="formUserName" value="" id="formUserName">
+        </label>
+        <div class="flexCenter">
+          <button type="submit" name="headFormBtn" class="btn btn_gr">Отримати бонус</button>
+        </div>
+        <i class="qizBtnT">
+          Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+          погоджуєтеся з нашою політикою конфіденційності.
+        </i>
+      </form>
+    </div>
+    <!-- Head form -->
+
+    <header class="header headerPage">
+      <nav class="mainNav">
+        <a href="/" class="logo"><img src="img/Logo-min.svg" alt="Logo"></a>
+        <div class="navRight">
+          <div class="navLang">
+            <button type="button" class="navLang">
+              <span>UA <img src="img/arrow-bot.svg" alt="Ar"></span>
+            </button>
+            <div class="navLangList">
+              <a href="#">UA</a>
+              <a href="#">RU</a>
+              <a href="#">EN</a>
+            </div>
+          </div>
+          <div class="navMedia">
+            <a href="" target="_blank"><img src="img/instagram.svg" alt="Media"></a>
+            <a href="" target="_blank"><img src="img/youtube.svg" alt="Media"></a>
+            <a href="" target="_blank"><img src="img/whatsapp.svg" alt="Media"></a>
+            <a href="" target="_blank"><img src="img/telegram.svg" alt="Media"></a>
+          </div>
+          <button type="button" class="navMbutton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+      <div class="navListMenu">
+        <div class="navListRow">
+          <a href="#">Головна</a>
+          <a href="#">Про нас</a>
+          <a href="#">Наші проєкти</a>
+          <a href="#">Про Балі</a>
+          <a href="#">Партнерам</a>
+          <a href="#">Блог</a>
+          <a href="#">Поширені запитання</a>
+          <a href="#">Кар'єра</a>
+          <a href="#">Контакти</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section sec3 secPageMoon" id="sec3">
+      <div class="pagePartnersPic">
+        <img src="img/moon-rock.jpg" alt="Part">
+      </div>
+
+      <div class="container">
+        <div class="moonBtnWr">
+          <img src="img/moon-logo.png" alt="Ico">
+          <a href="#" class="btn btn_gr2">Обрати апартаменти</a>
+        </div>
+
+        <div class="pagePartnersWr">
+
+          <div class="pagePartnersDesc pageMoonRDesc">
+            <p>Комплекс вілл з власним басейном в Убуді</p>
+            <div class="moonStatWr">
+              <div class="moonStat"><b>16</b> вiлл</div>
+              <div class="moonStat"><b>17.7%</b> річних</div>
+            </div>
+            <div class="moonStatWr">
+              <div class="moonStat moonStatFl">
                 <div>
-                    <label for="sec10PCode" class="relLabel">
-                        Ваш телефон*
-                        <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
-                        <div class="phoneSuggestions suggestions"></div>
-                    </label>
+                  <b>10</b> років гарантії
                 </div>
-
-                <label for="headFormMail">
-                    Ваш email
-                    <input type="email" name="headFormMail" id="headFormMail">
-                </label>
-
-                <i>Оберіть зручний для вас месенджер</i>
-
-                <div class="formGroup">
-                    <div class="formGroupWr">
-                        <label for="headFormMediaWApp" class="formGroupLb">
-                            <input type="radio" name="sheadFormMedia" value="WhatsApp" id="headFormMediaWApp" checked>
-                            <span class="formGroupOw"></span>
-                            <i>WhatsApp</i>
-                        </label>
-                        <label for="headFormMediaTg" class="formGroupLb">
-                            <input type="radio" name="sheadFormMedia" value="Telegram" id="headFormMediaTg">
-                            <span class="formGroupOw"></span>
-                            <i>Telegram</i>
-                        </label>
-                    </div>
-                    <div class="formGroupWr">
-                        <label for="headFormAction1" class="formGroupLb">
-                            <input type="radio" name="headFormAction" value="Передзвонити" id="headFormAction1" checked>
-                            <span class="formGroupOw"></span>
-                            <i>Передзвонити</i>
-                        </label>
-                        <label for="headFormAction2" class="formGroupLb">
-                            <input type="radio" name="headFormAction" value="Написати" id="headFormAction2">
-                            <span class="formGroupOw"></span>
-                            <i>Написати</i>
-                        </label>
-                    </div>
-                </div>
-                <label for="formUserName" class="formGroupLb formGroupLb2">
-                    Ваш юзернейм
-                    <input type="text" name="formUserName" value="" id="formUserName">
-                </label>
-                <div class="flexCenter">
-                    <button type="submit" name="headFormBtn" class="btn btn_gr">Отримати бонус</button>
-                </div>
-                <i class="qizBtnT">
-                    Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
-                    погоджуєтеся з нашою політикою конфіденційності.
-                </i>
-            </form>
+                <div>на конструктивну частину</div>
+              </div>
+            </div>
+            <p>
+              Атмосфера наших вілл доповнить позитивні враження від подорожі, роблячи відпочинок
+              по-справжньому незабутнім.
+            </p>
+            <p>
+              Вiлли Moonrock 1.0 вже повністю розпродані! Це успішний проєкт, що підтверджує нашу
+              надійність і попит на ринку.
+            </p>
+            <p>
+              Тепер відкрито продаж вілл Moonrock 2.0 — скористайтеся можливістю інвестувати в новий етап
+              розвитку. Не пропустіть шанс стати частиною нашого наступного успішного проєкту!
+            </p>
+            <span class="btn btn_gr" id="headFormSubmit">Зв'яжіться з нами</span>
+          </div>
         </div>
-        <!-- Head form -->
+      </div>
+    </section>
 
-        <header class="header headerPage">
-            <nav class="mainNav">
-                <a href="/" class="logo"><img src="img/Logo-min.svg" alt="Logo"></a>
-                <div class="navRight">
-                    <div class="navLang">
-                        <button type="button" class="navLang">
-                            <span>UA <img src="img/arrow-bot.svg" alt="Ar"></span>
-                        </button>
-                        <div class="navLangList">
-                            <a href="#">UA</a>
-                            <a href="#">RU</a>
-                            <a href="#">EN</a>
-                        </div>
-                    </div>
-                    <div class="navMedia">
-                        <a href="" target="_blank"><img src="img/instagram.svg" alt="Media"></a>
-                        <a href="" target="_blank"><img src="img/youtube.svg" alt="Media"></a>
-                        <a href="" target="_blank"><img src="img/whatsapp.svg" alt="Media"></a>
-                        <a href="" target="_blank"><img src="img/telegram.svg" alt="Media"></a>
-                    </div>
-                    <button type="button" class="navMbutton">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
-            <div class="navListMenu">
-                <div class="navListRow">
-                    <a href="#">Головна</a>
-                    <a href="#">Про нас</a>
-                    <a href="#">Наші проєкти</a>
-                    <a href="#">Про Балі</a>
-                    <a href="#">Партнерам</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Поширені запитання</a>
-                    <a href="#">Кар'єра</a>
-                    <a href="#">Контакти</a>
-                </div>
+    <section class="section sectionLine secMoonPlansWr">
+      <div class="container">
+        <!-- <h3 class="secTitle secTitlePage"></h3> -->
+        <div class="moonTabsWrapperBtn">
+          <button type="button" class="moonTabBtn active" data-target="moonTabsCont-1">
+            <img src="img/st-m-1.png" alt="St">
+            <b>MoonRock 1.0</b>
+            <span class="spanRd">Розпродано</span>
+          </button>
+          <button type="button" class="moonTabBtn" data-target="moonTabsCont-2">
+            <img src="img/st-m-2.png" alt="St">
+            <b>MoonRock 2.0</b>
+            <span class="spanGr">Вже доступний</span>
+          </button>
+        </div>
+
+        <div class="moonTabsContWrapper">
+          <div class="moonTabContent active" id="moonTabsCont-1">
+            <div class="moonTabsWrapperBtn moonTabsWrapperBtn2 mt20">
+              <button type="button" class="moonTabBtn2 active" data-target="moonTabsCont2-1">Планували</button>
+              <button type="button" class="moonTabBtn2" data-target="moonTabsCont2-2">Зробили</button>
+              <a href="#" class="droneTab">
+                <img src="img/drone.svg" alt="Drone">
+                Аєротур
+              </a>
             </div>
-        </header>
+            <div class="moonTabContent2 active" id="moonTabsCont2-1">
+              <!-- Carousel -->
+              <div class="moonCarouselDots" id="carousel1-dots">
+                <button type="button" class="moonCarouselBtn active" data-target="0">
+                  <img src="img/moonCarouser/1.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="1">
+                  <img src="img/moonCarouser/2.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="2">
+                  <img src="img/moonCarouser/3.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="3">
+                  <img src="img/moonCarouser/4.jpg" alt="Ico">
+                </button>
+              </div>
+              <div class="moonCarouselSlide" id="carousel1-slides">
+                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
+                </div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
+              </div>
+            </div>
+            <div class="moonTabContent2" id="moonTabsCont2-2">
+              <div class="moonCarouselDots" id="carousel2-dots">
+                <button type="button" class="moonCarouselBtn active" data-target="0">
+                  <img src="img/moonCarouser/1.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="1">
+                  <img src="img/moonCarouser/2.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="2">
+                  <img src="img/moonCarouser/3.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="3">
+                  <img src="img/moonCarouser/4.jpg" alt="Ico">
+                </button>
+              </div>
+              <div class="moonCarouselSlide" id="carousel2-slides">
+                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
+                </div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
+              </div>
+            </div>
+          </div>
+          <div class="moonTabContent" id="moonTabsCont-2">
+            <div class="moonTabsWrapperBtn moonTabsWrapperBtn2 mt20">
+              <button type="button" class="moonTabBtn3 active" data-target="moonTabsCont3-1">Інтер'єр</button>
+              <button type="button" class="moonTabBtn3" data-target="moonTabsCont3-2">Екстер'єр</button>
+              <a href="#" class="droneTab">
+                <img src="img/drone.svg" alt="Drone">
+                Аєротур
+              </a>
+            </div>
+            <div class="moonTabContent3 active" id="moonTabsCont3-1">
+              <div class="moonCarouselDots" id="carousel3-dots">
+                <button type="button" class="moonCarouselBtn active" data-target="0">
+                  <img src="img/moonCarouser/1.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="1">
+                  <img src="img/moonCarouser/2.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="2">
+                  <img src="img/moonCarouser/3.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="3">
+                  <img src="img/moonCarouser/4.jpg" alt="Ico">
+                </button>
+              </div>
+              <div class="moonCarouselSlide" id="carousel3-slides">
+                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
+                </div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
+              </div>
+            </div>
+            <div class="moonTabContent3" id="moonTabsCont3-2">
+              <div class="moonCarouselDots" id="carousel4-dots">
+                <button type="button" class="moonCarouselBtn active" data-target="0">
+                  <img src="img/moonCarouser/1.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="1">
+                  <img src="img/moonCarouser/2.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="2">
+                  <img src="img/moonCarouser/3.jpg" alt="Ico">
+                </button>
+                <button type="button" class="moonCarouselBtn" data-target="3">
+                  <img src="img/moonCarouser/4.jpg" alt="Ico">
+                </button>
+              </div>
+              <div class="moonCarouselSlide" id="carousel4-slides">
+                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
+                </div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
+                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
+              </div>
+              <div class="unitWr">
+                <div>Обрати свою віллу в наступній черзі</div>
+                <a href="#" class="btn btn_gr">Вибрати юніт</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="section sec3 secPageMoon" id="sec3">
-            <div class="pagePartnersPic">
-                <img src="img/moon-rock.jpg" alt="Part">
+    <section class="section sectionLine">
+      <div class="container">
+        <h3 class="secTitle secTitlePage">Однокімнатна Вілла</h3>
+        <div class="moonHomeWrapper">
+          <div class="moonHomeImg">
+            <img src="img/moon-h1.jpg" alt="Pic">
+          </div>
+          <div class="moonHomeDesc">
+            <div class="moonHomeRow">
+              Від <b>$124 000</b>
+            </div>
+            <div class="moonHomeRow">
+              <div>Площа: <b>49</b> м2</div>
+              <div>(квадратура разом із басейном)</div>
+            </div>
+            <div class="moonHomeCol">
+              <div>
+                <img src="img/moon-h-1.svg" alt="Ico">
+                <b>1</b>кімната
+              </div>
+              <div>
+                <img src="img/moon-h-2.svg" alt="Ico">
+                <b>2</b>ванні кімнати
+              </div>
+              <div>
+                <img src="img/moon-h-3.svg" alt="Ico">
+                <b>1</b>вітальня
+              </div>
+              <div>
+                <img src="img/moon-h-4.svg" alt="Ico">
+                <b>1</b>басейн
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section sec10" id="sec10">
+      <div class="container">
+        <h3 class="secTitle">Допоможемо знайти прибуткову нерухомість на Балі!</h3>
+        <div class="qizPic sec10Pic">
+          <span class="qizPicLine1"></span>
+          <img src="img/sec10-pic.jpg?v=1.0.1" alt="Pic">
+          <span class="qizPicLine2"></span>
+        </div>
+        <div class="sec10T">
+          Заповніть форму, і ми зв’яжемося з вами найближчим часом!
+        </div>
+        <form action="/">
+          <div class="modalQizForm">
+            <label for="sec10Name">
+              Ваше ім'я*
+              <input type="text" name="sec10Name" id="sec10Name" required>
+            </label>
+
+            <div>
+              <label for="sec10PCode" class="relLabel">
+                Ваш телефон*
+                <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
+                <div class="phoneSuggestions suggestions"></div>
+              </label>
             </div>
 
-            <div class="container">
-                <div class="moonBtnWr">
-                    <img src="img/moon-logo.png" alt="Ico">
-                    <a href="#" class="btn btn_gr2">Обрати апартаменти</a>
-                </div>
+            <label for="sec10Mail">
+              Ваш email
+              <input type="email" name="sec10Mail" id="sec10Mail">
+            </label>
+            <label for="sec10Promo">
+              Промокод на знижку
+              <input type="text" name="sec10Promo" id="sec10Promo">
+            </label>
 
-                <div class="pagePartnersWr">
+            <i>Оберіть зручний для вас месенджер</i>
 
-                    <div class="pagePartnersDesc pageMoonRDesc">
-                        <p>Комплекс вілл з власним басейном в Убуді</p>
-                        <div class="moonStatWr">
-                            <div class="moonStat"><b>16</b> вiлл</div>
-                            <div class="moonStat"><b>17.7%</b> річних</div>
-                        </div>
-                        <div class="moonStatWr">
-                            <div class="moonStat moonStatFl">
-                                <div>
-                                    <b>10</b> років гарантії
-                                </div>
-                                <div>на конструктивну частину</div>
-                            </div>
-                        </div>
-                        <p>
-                            Атмосфера наших вілл доповнить позитивні враження від подорожі, роблячи відпочинок
-                            по-справжньому незабутнім.
-                        </p>
-                        <p>
-                            Вiлли Moonrock 1.0 вже повністю розпродані! Це успішний проєкт, що підтверджує нашу
-                            надійність і попит на ринку.
-                        </p>
-                        <p>
-                            Тепер відкрито продаж вілл Moonrock 2.0 — скористайтеся можливістю інвестувати в новий етап
-                            розвитку. Не пропустіть шанс стати частиною нашого наступного успішного проєкту!
-                        </p>
-                        <span class="btn btn_gr" id="headFormSubmit">Зв'яжіться з нами</span>
-                    </div>
-                </div>
+            <div class="formGroup formGroupQiz">
+              <div class="formGroupWr">
+                <label for="formSec11" class="formGroupLb">
+                  <input type="radio" name="sec10Media" value="WhatsApp" id="formSec11" checked>
+                  <span class="formGroupOw"></span>
+                  <i>WhatsApp</i>
+                </label>
+                <label for="formSec10" class="formGroupLb">
+                  <input type="radio" name="sec10Media" value="Telegram" id="formSec10">
+                  <span class="formGroupOw"></span>
+                  <i>Telegram</i>
+                </label>
+
+              </div>
+              <div class="formGroupWr">
+                <label for="formSec12" class="formGroupLb">
+                  <input type="radio" name="sec10Action" value="Передзвонити" id="formSec12" checked>
+                  <span class="formGroupOw"></span>
+                  <i>Передзвонити</i>
+                </label>
+                <label for="formSec13" class="formGroupLb">
+                  <input type="radio" name="sec10Action" value="Написати" id="formSec13">
+                  <span class="formGroupOw"></span>
+                  <i>Написати</i>
+                </label>
+              </div>
             </div>
-        </section>
-
-        <section class="section sectionLine secMoonPlansWr">
-            <div class="container">
-                <!-- <h3 class="secTitle secTitlePage"></h3> -->
-                <div class="moonTabsWrapperBtn">
-                    <button type="button" class="moonTabBtn active" data-target="moonTabsCont-1">
-                        <img src="img/st-m-1.png" alt="St">
-                        <b>MoonRock 1.0</b>
-                        <span class="spanRd">Розпродано</span>
-                    </button>
-                    <button type="button" class="moonTabBtn" data-target="moonTabsCont-2">
-                        <img src="img/st-m-2.png" alt="St">
-                        <b>MoonRock 2.0</b>
-                        <span class="spanGr">Вже доступний</span>
-                    </button>
-                </div>
-
-                <div class="moonTabsContWrapper">
-                    <div class="moonTabContent active" id="moonTabsCont-1">
-                        <div class="moonTabsWrapperBtn moonTabsWrapperBtn2 mt20">
-                            <button type="button" class="moonTabBtn2 active"
-                                data-target="moonTabsCont2-1">Планували</button>
-                            <button type="button" class="moonTabBtn2" data-target="moonTabsCont2-2">Зробили</button>
-                        </div>
-                        <div class="moonTabContent2 active" id="moonTabsCont2-1">
-                            <!-- Carousel -->
-                            <div class="moonCarouselDots" id="carousel1-dots">
-                                <button type="button" class="moonCarouselBtn active" data-target="0">
-                                    <img src="img/moonCarouser/1.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="1">
-                                    <img src="img/moonCarouser/2.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="2">
-                                    <img src="img/moonCarouser/3.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="3">
-                                    <img src="img/moonCarouser/4.jpg" alt="Ico">
-                                </button>
-                            </div>
-                            <div class="moonCarouselSlide" id="carousel1-slides">
-                                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
-                                </div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
-                            </div>
-                        </div>
-                        <div class="moonTabContent2" id="moonTabsCont2-2">
-                            <div class="moonCarouselDots" id="carousel2-dots">
-                                <button type="button" class="moonCarouselBtn active" data-target="0">
-                                    <img src="img/moonCarouser/1.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="1">
-                                    <img src="img/moonCarouser/2.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="2">
-                                    <img src="img/moonCarouser/3.jpg" alt="Ico">
-                                </button>
-                                <button type="button" class="moonCarouselBtn" data-target="3">
-                                    <img src="img/moonCarouser/4.jpg" alt="Ico">
-                                </button>
-                            </div>
-                            <div class="moonCarouselSlide" id="carousel2-slides">
-                                <div class="moonCarouselSlideItem active"><img src="img/moonCarouser/1-1.jpg" alt="Pic">
-                                </div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/2-2.jpg" alt="Pic"></div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/3-3.jpg" alt="Pic"></div>
-                                <div class="moonCarouselSlideItem"><img src="img/moonCarouser/4-4.jpg" alt="Pic"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="moonTabContent" id="moonTabsCont-2">
-                        <div class="moonTabsWrapperBtn moonTabsWrapperBtn2 mt20">
-                            <button type="button" class="moonTabBtn3 active"
-                                data-target="moonTabsCont3-1">Інтер'єр</button>
-                            <button type="button" class="moonTabBtn3" data-target="moonTabsCont3-2">Екстер'єр</button>
-                        </div>
-                        <div class="moonTabContent3 active" id="moonTabsCont3-1">1</div>
-                        <div class="moonTabContent3" id="moonTabsCont3-2">2</div>
-                    </div>
-                </div>
+            <label for="formUserName" class="formGroupLb formGroupLb2">
+              Ваш юзернейм
+              <input type="text" name="formUserName" value="" id="formUserName">
+            </label>
+            <div class="flexCenter">
+              <button type="submit" class="btn btn_gr">Отримати бонус</button>
             </div>
-        </section>
+            <i class="qizBtnT">
+              Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+              погоджуєтеся з нашою політикою конфіденційності.
+            </i>
+          </div>
+        </form>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <div class="container containerF">
+        <div class="fWel">Ми будемо раді зустрітися з вами в нашому офісі у Чангу, Балі!</div>
+        <div class="flexCenter">
+          <span class="btn btn_gr" id="visitOfficeFormSubmit">Відвідати офіс</span>
+        </div>
+        <div class="fLogo">
+          <img src="img/Logo.svg" alt="Logo">
+        </div>
+        <div class="fDesc">
+          <a href="#">Політика конфіденційності</a>
+          <span>© BIG WAVES DEVELOPMENT 2024 </span>
+        </div>
+      </div>
+    </footer>
+  </main>
 
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/fancyBox-3.0.47.js"></script>
+  <script src="js/main.js?v=4.0.1"></script>
+  <script>
+    $(document).ready(function () {
+      $('.benefitsOfWorkingCl').owlCarousel({
+        loop: true,
+        margin: 25,
+        nav: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    });
+  </script>
+  <script>
+    // Head form
+    document.addEventListener('DOMContentLoaded', () => {
+      const headFormSubmit = document.getElementById('headFormSubmit');
+      const headForm = document.getElementById('headForm');
+      const closeHeadForm = document.querySelector('.closeheadForm');
 
-        <section class="section sec10" id="sec10">
-            <div class="container">
-                <h3 class="secTitle">Допоможемо знайти прибуткову нерухомість на Балі!</h3>
-                <div class="qizPic sec10Pic">
-                    <span class="qizPicLine1"></span>
-                    <img src="img/sec10-pic.jpg?v=1.0.1" alt="Pic">
-                    <span class="qizPicLine2"></span>
-                </div>
-                <div class="sec10T">
-                    Заповніть форму, і ми зв’яжемося з вами найближчим часом!
-                </div>
-                <form action="/">
-                    <div class="modalQizForm">
-                        <label for="sec10Name">
-                            Ваше ім'я*
-                            <input type="text" name="sec10Name" id="sec10Name" required>
-                        </label>
+      headFormSubmit.addEventListener('click', () => {
+        headForm.classList.add('headFormActive');
+      });
 
-                        <div>
-                            <label for="sec10PCode" class="relLabel">
-                                Ваш телефон*
-                                <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
-                                <div class="phoneSuggestions suggestions"></div>
-                            </label>
-                        </div>
+      const removeHeadFormActive = (event) => {
+        if (
+          event.target === closeHeadForm ||
+          (!headForm.contains(event.target) && event.target !== headFormSubmit)
+        ) {
+          headForm.classList.remove('headFormActive');
+        }
+      };
 
-                        <label for="sec10Mail">
-                            Ваш email
-                            <input type="email" name="sec10Mail" id="sec10Mail">
-                        </label>
-                        <label for="sec10Promo">
-                            Промокод на знижку
-                            <input type="text" name="sec10Promo" id="sec10Promo">
-                        </label>
+      closeHeadForm.addEventListener('click', removeHeadFormActive);
+      document.addEventListener('click', removeHeadFormActive);
+    });
 
-                        <i>Оберіть зручний для вас месенджер</i>
+    // Tabs
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".moonTabBtn");
+      const contents = document.querySelectorAll(".moonTabContent");
 
-                        <div class="formGroup formGroupQiz">
-                            <div class="formGroupWr">
-                                <label for="formSec11" class="formGroupLb">
-                                    <input type="radio" name="sec10Media" value="WhatsApp" id="formSec11" checked>
-                                    <span class="formGroupOw"></span>
-                                    <i>WhatsApp</i>
-                                </label>
-                                <label for="formSec10" class="formGroupLb">
-                                    <input type="radio" name="sec10Media" value="Telegram" id="formSec10">
-                                    <span class="formGroupOw"></span>
-                                    <i>Telegram</i>
-                                </label>
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          buttons.forEach(btn => btn.classList.remove("active"));
+          contents.forEach(content => content.classList.remove("active"));
 
-                            </div>
-                            <div class="formGroupWr">
-                                <label for="formSec12" class="formGroupLb">
-                                    <input type="radio" name="sec10Action" value="Передзвонити" id="formSec12" checked>
-                                    <span class="formGroupOw"></span>
-                                    <i>Передзвонити</i>
-                                </label>
-                                <label for="formSec13" class="formGroupLb">
-                                    <input type="radio" name="sec10Action" value="Написати" id="formSec13">
-                                    <span class="formGroupOw"></span>
-                                    <i>Написати</i>
-                                </label>
-                            </div>
-                        </div>
-                        <label for="formUserName" class="formGroupLb formGroupLb2">
-                            Ваш юзернейм
-                            <input type="text" name="formUserName" value="" id="formUserName">
-                        </label>
-                        <div class="flexCenter">
-                            <button type="submit" class="btn btn_gr">Отримати бонус</button>
-                        </div>
-                        <i class="qizBtnT">
-                            Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
-                            погоджуєтеся з нашою політикою конфіденційності.
-                        </i>
-                    </div>
-                </form>
-            </div>
-        </section>
+          button.classList.add("active");
 
-        <footer class="footer">
-            <div class="container containerF">
-                <div class="fWel">Ми будемо раді зустрітися з вами в нашому офісі у Чангу, Балі!</div>
-                <div class="flexCenter">
-                    <span class="btn btn_gr" id="visitOfficeFormSubmit">Відвідати офіс</span>
-                </div>
-                <div class="fLogo">
-                    <img src="img/Logo.svg" alt="Logo">
-                </div>
-                <div class="fDesc">
-                    <a href="#">Політика конфіденційності</a>
-                    <span>© BIG WAVES DEVELOPMENT 2024 </span>
-                </div>
-            </div>
-        </footer>
-    </main>
-
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/fancyBox-3.0.47.js"></script>
-    <script src="js/main.js?v=4.0.1"></script>
-    <script>
-        $(document).ready(function () {
-            $('.benefitsOfWorkingCl').owlCarousel({
-                loop: true,
-                margin: 25,
-                nav: true,
-                autoplay: false,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            })
+          const targetId = button.dataset.target;
+          const targetContent = document.getElementById(targetId);
+          if (targetContent) {
+            targetContent.classList.add("active");
+          }
         });
-    </script>
-    <script>
-        // Head form
-        document.addEventListener('DOMContentLoaded', () => {
-            const headFormSubmit = document.getElementById('headFormSubmit');
-            const headForm = document.getElementById('headForm');
-            const closeHeadForm = document.querySelector('.closeheadForm');
+      });
+    });
 
-            headFormSubmit.addEventListener('click', () => {
-                headForm.classList.add('headFormActive');
+    // Tabs2
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons2 = document.querySelectorAll(".moonTabBtn2");
+      const contents2 = document.querySelectorAll(".moonTabContent2");
+
+      buttons2.forEach(button => {
+        button.addEventListener("click", () => {
+          buttons2.forEach(btn => btn.classList.remove("active"));
+          contents2.forEach(content => content.classList.remove("active"));
+
+          button.classList.add("active");
+
+          const targetId = button.dataset.target;
+          const targetContent = document.getElementById(targetId);
+          if (targetContent) {
+            targetContent.classList.add("active");
+          }
+        });
+      });
+    });
+
+    // Tabs3
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons3 = document.querySelectorAll(".moonTabBtn3");
+      const contents3 = document.querySelectorAll(".moonTabContent3");
+
+      buttons3.forEach(button => {
+        button.addEventListener("click", () => {
+          buttons3.forEach(btn => btn.classList.remove("active"));
+          contents3.forEach(content => content.classList.remove("active"));
+
+          button.classList.add("active");
+
+          const targetId = button.dataset.target;
+          const targetContent = document.getElementById(targetId);
+          if (targetContent) {
+            targetContent.classList.add("active");
+          }
+        });
+      });
+    });
+
+    // Slider 1
+    document.addEventListener("DOMContentLoaded", () => {
+      const initializeCarousel = (dotsId, slidesId) => {
+        const buttons = document.querySelectorAll(`#${dotsId} .moonCarouselBtn`);
+        const slides = document.querySelectorAll(`#${slidesId} .moonCarouselSlideItem`);
+
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            const targetIndex = button.dataset.target;
+
+            buttons.forEach(btn => btn.classList.remove("active"));
+            slides.forEach(slide => {
+              slide.classList.remove("active");
+              slide.style.opacity = "0";
             });
 
-            const removeHeadFormActive = (event) => {
-                if (
-                    event.target === closeHeadForm ||
-                    (!headForm.contains(event.target) && event.target !== headFormSubmit)
-                ) {
-                    headForm.classList.remove('headFormActive');
-                }
-            };
-
-            closeHeadForm.addEventListener('click', removeHeadFormActive);
-            document.addEventListener('click', removeHeadFormActive);
+            button.classList.add("active");
+            slides[targetIndex].classList.add("active");
+            setTimeout(() => {
+              slides[targetIndex].style.opacity = "1";
+            }, 50);
+          });
         });
+      };
 
-        // Tabs
-        document.addEventListener("DOMContentLoaded", () => {
-            const buttons = document.querySelectorAll(".moonTabBtn");
-            const contents = document.querySelectorAll(".moonTabContent");
+      initializeCarousel("carousel1-dots", "carousel1-slides");
+      initializeCarousel("carousel2-dots", "carousel2-slides");
+      initializeCarousel("carousel3-dots", "carousel3-slides");
+      initializeCarousel("carousel4-dots", "carousel4-slides");
+    });
+  </script>
 
-            buttons.forEach(button => {
-                button.addEventListener("click", () => {
-                    buttons.forEach(btn => btn.classList.remove("active"));
-                    contents.forEach(content => content.classList.remove("active"));
-
-                    button.classList.add("active");
-
-                    const targetId = button.dataset.target;
-                    const targetContent = document.getElementById(targetId);
-                    if (targetContent) {
-                        targetContent.classList.add("active");
-                    }
-                });
-            });
-        });
-
-        // Tabs2
-        document.addEventListener("DOMContentLoaded", () => {
-            const buttons2 = document.querySelectorAll(".moonTabBtn2");
-            const contents2 = document.querySelectorAll(".moonTabContent2");
-
-            buttons2.forEach(button => {
-                button.addEventListener("click", () => {
-                    buttons2.forEach(btn => btn.classList.remove("active"));
-                    contents2.forEach(content => content.classList.remove("active"));
-
-                    button.classList.add("active");
-
-                    const targetId = button.dataset.target;
-                    const targetContent = document.getElementById(targetId);
-                    if (targetContent) {
-                        targetContent.classList.add("active");
-                    }
-                });
-            });
-        });
-
-        // Tabs3
-        document.addEventListener("DOMContentLoaded", () => {
-            const buttons3 = document.querySelectorAll(".moonTabBtn3");
-            const contents3 = document.querySelectorAll(".moonTabContent3");
-
-            buttons3.forEach(button => {
-                button.addEventListener("click", () => {
-                    buttons3.forEach(btn => btn.classList.remove("active"));
-                    contents3.forEach(content => content.classList.remove("active"));
-
-                    button.classList.add("active");
-
-                    const targetId = button.dataset.target;
-                    const targetContent = document.getElementById(targetId);
-                    if (targetContent) {
-                        targetContent.classList.add("active");
-                    }
-                });
-            });
-        });
-
-        // Slider 1
-        document.addEventListener("DOMContentLoaded", () => {
-            const initializeCarousel = (dotsId, slidesId) => {
-                const buttons = document.querySelectorAll(`#${dotsId} .moonCarouselBtn`);
-                const slides = document.querySelectorAll(`#${slidesId} .moonCarouselSlideItem`);
-
-                buttons.forEach(button => {
-                    button.addEventListener("click", () => {
-                        const targetIndex = button.dataset.target;
-
-                        buttons.forEach(btn => btn.classList.remove("active"));
-                        slides.forEach(slide => {
-                            slide.classList.remove("active");
-                            slide.style.opacity = "0";
-                        });
-
-                        button.classList.add("active");
-                        slides[targetIndex].classList.add("active");
-                        setTimeout(() => {
-                            slides[targetIndex].style.opacity = "1";
-                        }, 50);
-                    });
-                });
-            };
-
-            initializeCarousel("carousel1-dots", "carousel1-slides");
-            initializeCarousel("carousel2-dots", "carousel2-slides");
-        });
-    </script>
-
-    <script src="js/selectCountry.js"></script>
+  <script src="js/selectCountry.js"></script>
 </body>
 
 </html>
