@@ -3474,7 +3474,7 @@ label i {
 }
 
 .moonHomeCol div img {
-  width: 80px;
+  width: 80px !important;
 }
 
 .unitWr {
@@ -3495,4 +3495,34 @@ label i {
   color: #fff;
   font-size: 12px;
   text-decoration: none;
+}
+
+.moonHomeP {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 24px;
+}
+
+.moonHomeAccoWr {
+  background: #595959;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 24px;
+  padding: 5px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+  min-height: 100px;
+  display: none;
+}
+
+.moonHomeAccoWr.active {
+  height: 100%;
+  display: flex;
+}
+
+.moonHomeWrapper {
+  padding: 0 20px;
 }
