@@ -91,6 +91,74 @@
     </div>
     <!-- Head form -->
 
+    <!-- Remote control form -->
+    <div class="defForm remoteControlForm" id="remoteControlForm">
+      <button type="button" class="closeRemoteControlForm"></button>
+      <form action="/">
+        <div class="defFormTitle">Як з вами зв’язатися?</div>
+        <label for="remoteControlFormName">
+          Ваше ім'я*
+          <input type="text" name="remoteControlFormName" id="remoteControlFormName" required>
+        </label>
+
+        <div>
+          <label for="sec10PCode" class="relLabel">
+            Ваш телефон*
+            <input type="text" name="sec10Phone[]" class="sec10Phone" required autocomplete="off">
+            <div class="phoneSuggestions suggestions"></div>
+          </label>
+        </div>
+
+        <label for="remoteControlFormMail">
+          Ваш email
+          <input type="email" name="remoteControlFormMail" id="remoteControlFormMail">
+        </label>
+
+        <i>Оберіть зручний для вас месенджер</i>
+
+        <div class="formGroup">
+          <div class="formGroupWr">
+            <label for="remoteControlFormMediaWApp" class="formGroupLb">
+              <input type="radio" name="remoteControlFormMedia" value="WhatsApp" id="remoteControlFormMediaWApp"
+                checked>
+              <span class="formGroupOw"></span>
+              <i>WhatsApp</i>
+            </label>
+            <label for="remoteControlFormMediaTg" class="formGroupLb">
+              <input type="radio" name="remoteControlFormMedia" value="Telegram" id="remoteControlFormMediaTg">
+              <span class="formGroupOw"></span>
+              <i>Telegram</i>
+            </label>
+          </div>
+          <div class="formGroupWr">
+            <label for="remoteControlFormAction1" class="formGroupLb">
+              <input type="radio" name="remoteControlFormAction" value="Передзвонити" id="remoteControlFormAction1"
+                checked>
+              <span class="formGroupOw"></span>
+              <i>Передзвонити</i>
+            </label>
+            <label for="remoteControlFormAction2" class="formGroupLb">
+              <input type="radio" name="remoteControlFormAction" value="Написати" id="remoteControlFormAction2">
+              <span class="formGroupOw"></span>
+              <i>Написати</i>
+            </label>
+          </div>
+        </div>
+        <label for="formUserName" class="formGroupLb formGroupLb2">
+          Ваш юзернейм
+          <input type="text" name="formUserName" value="" id="formUserName">
+        </label>
+        <div class="flexCenter">
+          <button type="submit" name="remoteControlFormBtn" class="btn btn_gr">Отримати бонус</button>
+        </div>
+        <i class="qizBtnT">
+          Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і
+          погоджуєтеся з нашою політикою конфіденційності.
+        </i>
+      </form>
+    </div>
+    <!-- Remote control form -->
+
     <header class="header headerPage">
       <nav class="mainNav">
         <a href="/" class="logo"><img src="img/Logo-min.svg" alt="Logo"></a>
@@ -481,6 +549,33 @@
       </div>
     </section>
 
+    <section class="section sectionLine secRemoteControl">
+      <div class="container">
+        <h3 class="secTitle">Віддалене управління</h3>
+        <div class="remoteControlWr">
+          <div class="remoteControlT">
+            Слідкуйте за своїми апартаментами в додатку Ribas Інвестор у реальному часі!
+          </div>
+          <div class="remoteControlPh">
+            <img src="img/ribasApp.png" alt="Ribas">
+          </div>
+          <div class="remoteControlRow">
+            <p>Переваги та основні функції:</p>
+            <div class="remoteControlCol">
+              <div><img src="img/star-r.svg" alt="Star">Фінансова аналітика для кожного об'єкта</div>
+              <div><img src="img/star-r.svg" alt="Star">Контроль стану апартаментів</div>
+              <div><img src="img/star-r.svg" alt="Star">Календар бронювань</div>
+              <div><img src="img/star-r.svg" alt="Star">Баланс і історія виплат</div>
+              <div><img src="img/star-r.svg" alt="Star">Оперативна служба підтримки клієнтів</div>
+              <div><img src="img/star-r.svg" alt="Star">Маркетплейс доступних об'єктів</div>
+            </div>
+          </div>
+          <span class="btn btn_gr" id="remoteControlFormSubmit">Отримати доступ</span>
+        </div>
+
+      </div>
+    </section>
+
 
     <section class="section sec10" id="sec10">
       <div class="container">
@@ -623,6 +718,29 @@
           (!headForm.contains(event.target) && event.target !== headFormSubmit)
         ) {
           headForm.classList.remove('headFormActive');
+        }
+      };
+
+      closeHeadForm.addEventListener('click', removeHeadFormActive);
+      document.addEventListener('click', removeHeadFormActive);
+    });
+
+    // Remote control form
+    document.addEventListener('DOMContentLoaded', () => {
+      const headFormSubmit = document.getElementById('remoteControlFormSubmit');
+      const headForm = document.getElementById('remoteControlForm');
+      const closeHeadForm = document.querySelector('.closeRemoteControlForm');
+
+      headFormSubmit.addEventListener('click', () => {
+        headForm.classList.add('remoteControlActive');
+      });
+
+      const removeHeadFormActive = (event) => {
+        if (
+          event.target === closeHeadForm ||
+          (!headForm.contains(event.target) && event.target !== headFormSubmit)
+        ) {
+          headForm.classList.remove('remoteControlActive');
         }
       };
 

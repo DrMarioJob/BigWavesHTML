@@ -591,6 +591,11 @@ i {
   background-size: cover;
 }
 
+.secRemoteControl {
+  background: url(../img/secRemoteControl.jpg) top center no-repeat;
+  background-size: cover;
+}
+
 .secMainTarget {
   background: #3F4042;
 }
@@ -2243,6 +2248,7 @@ select option {
   font-size: 20px;
 }
 
+.closeRemoteControlForm,
 .closeVisitOfficeForm,
 .closeProductionProcessForm,
 .closeInvestWithUsForm,
@@ -2261,6 +2267,7 @@ select option {
   right: 10px;
 }
 
+.remoteControlForm,
 .visitOfficeForm,
 .productionProcessForm,
 .investWithUsForm,
@@ -2272,6 +2279,7 @@ select option {
   display: none;
 }
 
+.remoteControlActive,
 .visitOfficeActive,
 .productionProcessActive,
 .investWithUsActive,
@@ -3525,4 +3533,51 @@ label i {
 
 .moonHomeWrapper {
   padding: 0 20px;
+}
+
+.remoteControlT {
+  line-height: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.remoteControlRow {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.remoteControlRow p {
+  color: #00B0A4;
+}
+
+.remoteControlCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 24px;
+}
+
+.remoteControlCol div {
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.remoteControlCol div img {
+  font-size: 16px;
+  width: 28px;
+}
+
+.remoteControlWr {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.remoteControlWr .btn {
+  width: fit-content;
 }
